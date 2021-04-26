@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Farmire</title>
+    <link rel="stylesheet" href="../asset/common/css/reset.css">
+    <link rel="stylesheet" href="../asset/common/css/all.css">
+    <link rel="stylesheet" href="../asset/common/css/font.css">
+    <link rel="stylesheet" href="../asset/common/css/button.css">
+    <link rel="stylesheet" href="../asset/common/css/common.css">
+    <link rel="stylesheet" href="../asset/admin/css/admin_base.css">
+    <script type="text/javascript" src="../asset/common/js/jquery.js"></script>
+    <script type="text/javascript" src="../asset/common/js/common.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="nav on">
+        <h1 class="branding">
+            <a href="index.html">FARMIRE</a>
+        </h1>
+        <ul class="gnb">
+            <li class="on"><a href="rmfarm_user.html"><i class="fa fa-user"></i> 사용자관리</a></li>
+            <li><a href="rmfarm_data.html"><i class="fa fa-wifi"></i> 데이터전송현황</a></li>
+            <li><a href="rmfarm_app.html"><i class="fa fa-mobile-alt"></i> 앱사용현황</a></li>
+            <li><a href="rmfarm_crops.html"><i class="fa fa-leaf"></i> 작물관리</a></li>
+            <li><a href="notice.html"><i class="fa fa-bullhorn"></i> 공지사항</a></li>
+            <li><a href="password.html"><i class="fa fa-key"></i> 비밀번호변경</a></li>
+        </ul>
+    </div>
+    <div class="container on">
+        <div class="container-header">
+            <div class="folding col-4"><a href="#"><i class="fa fa-bars"></i></a></div>
+            <div class="userInfo col-8"><strong>관리자</strong><a href="#">로그아웃 <i class="fa fa-sign-out-alt"></i></a></div>
+        </div>
+        <div class="container-body">
+            <h2>사용자 관리</h2>
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="form-horizontal search">
+                        <a href="#" class="searchFolding"><i class="fa fa-chevron-circle-up"></i></a>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="control-label col-2">날짜</label>
+                                    <div class="col-8 term">
+                                        <input type="date" class="form-control">
+                                        <span>~</span>
+                                        <input type="date" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="control-label col-2">접속상태</label>
+                                    <div class="col-8">
+                                        <label><input type="radio"> 온라인</label>
+                                        <label><input type="radio"> 오프라인</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btnWrap">
+                            <button class="btn btn-primary"><i class="fa fa-search"></i> 검색</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <ul class="tabs">
+                    <li class="on"><a href="#tab01">양액</a></li>
+                    <li><a href="#tab02">온도/습도/배지온도/광량</a></li>
+                    <li><a href="#tab03">EC/pH</a></li>
+                </ul>
+                <div class="tab-contents on panel-body" id="tab01">
+                    <div class="row">
+                        <div class="col-6">
+                            <h4>논산 김준태 / 0001 / 토마토</h4>
+                                <div class="chart">CHART <br> 양액</div>
+                        </div>
+                        <div class="col-6">
+                            <h4>논산 양승구 / 0001 / 토마토</h4>
+                            <div class="chart">CHART<br> 양액</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-contents panel-body" id="tab02">
+                    <div class="row">
+                        <div class="col-6">
+                            <h4>논산 김준태 / 0001 / 토마토</h4>
+                            <div class="chart">CHART<br> 온도/습도/배지온도/광량</div>
+                        </div>
+                        <div class="col-6">
+                            <h4>논산 양승구 / 0001 / 토마토</h4>
+                            <div class="chart">CHART<br> 온도/습도/배지온도/광량</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-contents panel-body" id="tab03">
+                    <div class="row">
+                        <div class="col-6">
+                            <h4>논산 김준태 / 0001 / 토마토</h4>
+                            <div class="chart">CHART<br> EC/pH</div>
+                        </div>
+                        <div class="col-6">
+                            <h4>논산 양승구 / 0001 / 토마토</h4>
+                            <div class="chart">CHART<br> EC/pH</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

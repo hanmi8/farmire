@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Farmire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asset/common/css/reset.css">
+    <link rel="stylesheet" href="../asset/common/css/all.css">
+    <link rel="stylesheet" href="../asset/common/css/font.css">
+    <link rel="stylesheet" href="../asset/common/css/nanumsquareround.css">
+    <link rel="stylesheet" href="../asset/common/css/carousel.css">
+    <link rel="stylesheet" href="../asset/common/css/button.css">
+    <link rel="stylesheet" href="../asset/common/css/common.css">
+    <link rel="stylesheet" href="../asset/user/css/user_base.css">
+    <link rel="stylesheet" href="../asset/user/css/index.css">
+    <script type="text/javascript" src="../asset/common/js/jquery.js"></script>
+    <script type="text/javascript" src="../asset/common/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../asset/user/js/common.js"></script>
+</head>
+<body>
+<div class="moreView">
+    <div class="app-header">
+        <a href="farmingon_user.html" class="back"><i class="fa fa-chevron-left"></i></a>
+        <label>더보기</label>
+    </div>
+    <div class="app-body">
+        <ul>
+            <li><a href="mypage.html">비밀번호 변경 <i class="fa fa-angle-right"></i></a></li>
+            <li><a href="notice.html">공지사항 <i class="fa fa-angle-right"></i></a></li>
+            <li><a href="http://www.ireis.co.kr" target="_blank">홈페이지 <i class="fa fa-angle-right"></i></a></li>
+            <li><a href="#" class="modalCall" data-target="#version">버전정보 <i class="fa fa-angle-right"></i></a></li>
+            <li><a href="#" class="modalCall" data-target="#auto-update">자동 업데이트 <i class="fa fa-angle-right"></i></a></li>
+            <li><a href="#" class="modalCall" data-target="#logout">로그아웃 <i class="fa fa-angle-right"></i></a></li>
+        </ul>
+    </div>
+</div>
+
+
+<!-- version -->
+<div class="modal" id="version">
+    <div class="modal-dialog">
+        <div class="modal-header">버전 정보</div>
+        <div class="modal-body">
+            <div class="version-wrap">
+                <span class="app-main-icon"></span>
+                <ul>
+                    <li>
+                        <label>현재버전</label>
+                        <strong>1.0.2</strong>
+                    </li>
+                    <li>
+                        <label>신규버전</label>
+                        <strong>1.1.0</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary btn-block modal-close"><i class="fa fa-check"></i> 업데이트</button>
+        </div>
+    </div>
+</div>
+
+<!-- auto-update -->
+<div class="modal" id="auto-update">
+    <div class="modal-dialog">
+        <div class="modal-header">자동 업데이트</div>
+        <div class="modal-body">
+            <ul class="update-time">
+                <li><label><input type="radio">없음</label></li>
+                <li><label><input type="radio">1분</label></li>
+                <li><label><input type="radio">3분</label></li>
+                <li><label><input type="radio">5분</label></li>
+                <li><label><input type="radio">10분</label></li>
+            </ul>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary btn-block modal-close"><i class="fa fa-check"></i> 확인</button>
+        </div>
+    </div>
+</div>
+
+<!-- logout -->
+<div class="modal" id="logout">
+    <div class="modal-dialog">
+        <div class="modal-header">로그아웃</div>
+        <div class="modal-body">
+            <div class="message">
+                로그아웃을 하시겠습니까?
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary btn-outline modal-close"><i class="fa fa-times"></i> 취소</button>
+            <button class="btn btn-primary modal-close"><i class="fa fa-check"></i> 확인</button>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

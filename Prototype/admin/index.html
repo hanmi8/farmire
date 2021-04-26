@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Farmire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asset/common/css/reset.css">
+    <link rel="stylesheet" href="../asset/common/css/all.css">
+    <link rel="stylesheet" href="../asset/common/css/font.css">
+    <link rel="stylesheet" href="../asset/common/css/font.css">
+    <link rel="stylesheet" href="../asset/common/css/common.css">
+    <link rel="stylesheet" href="../asset/admin/css/admin_base.css">
+    <script type="text/javascript" src="../asset/common/js/jquery.js"></script>
+    <script type="text/javascript" src="../asset/common/js/apexcharts.js"></script>
+    <script type="text/javascript" src="../asset/common/js/admin_index.js"></script>
+    <script type="text/javascript" src="../asset/common/js/common.js"></script>
+
+</head>
+<body>
+<div class="wrapper index">
+    <div class="nav on">
+        <h1 class="branding">
+            <a href="index.html">FARMIRE</a>
+        </h1>
+        <div class="swapDevice">
+            <select class="form-control" onchange="location.href=this.value">
+                <option>장비선택</option>
+                <option value="farmingon_user.html">파밍온</option>
+                <option value="farmingon2_user.html">파밍온2</option>
+                <option value="rmfarm_user.html">알엠팜</option>
+            </select>
+        </div>
+<!--        <ul class="gnb">-->
+<!--            <li><a href="rmfarm_user.html"><i class="fa fa-user"></i> 사용자관리</a></li>-->
+<!--            <li><a href="rmfarm_data.html"><i class="fa fa-wifi"></i> 데이터전송현황</a></li>-->
+<!--            <li><a href="rmfarm_app.html"><i class="fa fa-mobile-alt"></i> 앱사용현황</a></li>-->
+<!--            <li><a href="rmfarm_crops.html"><i class="fa fa-leaf"></i> 작물관리</a></li>-->
+<!--            <li><a href="notice.html"><i class="fa fa-bullhorn"></i> 공지사항</a></li>-->
+<!--            <li><a href="password.html"><i class="fa fa-key"></i> 비밀번호변경</a></li>-->
+<!--        </ul>-->
+    </div>
+    <div class="container on">
+        <div class="container-header">
+            <div class="nav-folding col-4"><a href="#"><i class="fa fa-bars"></i></a></div>
+            <div class="userInfo col-8"><strong>관리자</strong><a href="#">로그아웃 <i class="fa fa-sign-out-alt"></i></a></div>
+        </div>
+        <div class="container-body">
+            <div class="d-flex">
+                <div class="col-4 d-flex flex-wrap">
+                    <div class="slogan">
+                        <img src="../asset/admin/images/logo.png">
+                        <span>Farming Tommorw</span>
+                        <label>FARMIRE</label>
+                    </div>
+                    <div class="card weather-wrap">
+                        <div class="weather">
+                            <div class="icon-wrap">
+                                <div class="weather-icon"><i class="fa fa-cloud-sun"></i></div>
+                                <div class="temperature">22℃</div>
+                            </div>
+                            <div class="location-info text-right">
+                                <div class="location"><i class="fa fa-location-arrow"></i><span>강릉시</span></div>
+                                <div class="date"><i class="fa fa-sync-alt"></i> 2021-03-14 16:42:52 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>사용자 현황</h2>
+                            <div class="map-chart">
+                                <img src="../asset/common/images/map.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap">
+                <div class="col-6">
+                    <div class="card regist user">
+                        <div class="card-header">
+                            <h2>사용자 등록현황</h2>
+                        </div>
+                        <div class="card-body">
+                            <ul class="device-three">
+                                <li>
+                                    <span class="device-icon">
+                                        <img src="../asset/common/images/icon_farmingon.png">
+                                    </span>
+                                    <h3>파밍온</h3>
+                                    <div class="user-count text-success">168</div>
+                                </li>
+                                <li>
+                                    <span class="device-icon">
+                                        <img src="../asset/common/images/icon_farmingon2.png">
+                                    </span>
+                                    <h3>파밍온2</h3>
+                                    <div class="user-count text-warning">29</div>
+                                </li>
+                                <li>
+                                    <span class="device-icon">
+                                        <img src="../asset/common/images/icon_rmfarm.png">
+                                    </span>
+                                    <h3>알엠팜</h3>
+                                    <div class="user-count text-info">187</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card regist device">
+                        <div class="card-header">
+                            <h2>단말 등록 현황</h2>
+                        </div>
+                        <div class="card-body">
+                            <ul class="device-three">
+                                <li>
+                                    <span class="device-icon">
+                                        <img src="../asset/common/images/icon_farmingon.png">
+                                    </span>
+                                    <h3>파밍온</h3>
+                                    <div class="user-count text-success">217</div>
+                                </li>
+                                <li>
+                                    <span class="device-icon">
+                                        <img src="../asset/common/images/icon_farmingon2.png">
+                                    </span>
+                                    <h3>파밍온2</h3>
+                                    <div class="user-count text-warning">43</div>
+                                </li>
+                                <li>
+                                    <span class="device-icon">
+                                        <img src="../asset/common/images/icon_rmfarm.png">
+                                    </span>
+                                    <h3>알엠팜</h3>
+                                    <div class="user-count text-info">237</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>장비 상태 정보</h2>
+                        </div>
+                        <div class="card-body">
+                            <ul class="device-three">
+                                <li>
+                                    <div class="index-chart" id="statusFarmingon"></div>
+                                </li>
+                                <li>
+                                    <div class="index-chart" id="statusFarmingon2"></div>
+                                </li>
+                                <li>
+                                    <div class="index-chart" id="statusRmfarm"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>데이터 전송정보</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="index-chart" id="dataTransfer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>스마트폰(운영체제) 사용 정보</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="index-chart" id="smartphone"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>농작물 정보</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="index-chart" id="crops"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>공지사항</h2>
+                        </div>
+                        <div class="card-body">
+                            <ul class="notice-list">
+                                <li><a href="#"><strong>[공지] 당사 배지함수율 측정장치 농업</strong> <span>03.20</span></a></li>
+                                <li><a href="#"><strong>첨단농업 박람회 네덜란드 GreenTech</strong> <span>03.05</span></a></li>
+                                <li><a href="#"><strong>(주)이레아이에스 2017 첨단 농축산기자</strong> <span>02.26</span></a></li>
+                                <li><a href="#"><strong>[공지] 당사 배지함수율 측정장치 농업</strong> <span>03.20</span></a></li>
+                                <li><a href="#"><strong>첨단농업 박람회 네덜란드 GreenTech</strong> <span>03.05</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(function() {
+        statusFarmingon.render();
+        statusFarmingon2.render();
+        statusRmfarm.render();
+        crops.render();
+        dataTransfer.render();
+        smartphone.render();
+    })
+</script>
+
+</body>
+</html>

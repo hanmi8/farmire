@@ -1,0 +1,45 @@
+/* 나눔스퀘어라운드 웹폰트 v1.11 https://github.com/innks/NanumSquareRound */
+@font-face {
+  font-family: "NanumSquareRound";
+  font-style: normal;
+  font-weight: 300;
+  src: local("NanumSquareRoundL"), /* computer */
+    url("../fonts/nanum/NanumSquareRoundL.eot"), /* IE9 Compat Modes */
+    url("../fonts/nanum/NanumSquareRoundL.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/nanum/NanumSquareRoundL.woff2") format("woff2"), /* Modern Browsers */
+    url("../fonts/nanum/NanumSquareRoundL.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/nanum/NanumSquareRoundL.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: "NanumSquareRound";
+  font-style: normal;
+  font-weight: 400;
+  src: local("NanumSquareRoundR"), /* computer */
+    url("../fonts/nanum/NanumSquareRoundR.eot"), /* IE9 Compat Modes */
+    url("../fonts/nanum/NanumSquareRoundR.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/nanum/NanumSquareRoundR.woff2") format("woff2"), /* Modern Browsers */
+    url("../fonts/nanum/NanumSquareRoundR.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/nanum/NanumSquareRoundR.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: "NanumSquareRound";
+  font-style: normal;
+  font-weight: 700;
+  src: local("NanumSquareRoundB"), /* computer */
+    url("../fonts/nanum/NanumSquareRoundB.eot"), /* IE9 Compat Modes */
+    url("../fonts/nanum/NanumSquareRoundB.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/nanum/NanumSquareRoundB.woff2") format("woff2"), /* Modern Browsers */
+    url("../fonts/nanum/NanumSquareRoundB.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/nanum/NanumSquareRoundB.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: "NanumSquareRound";
+  font-style: normal;
+  font-weight: 800;
+  src: local("NanumSquareRoundEB"), /* computer */
+    url("../fonts/nanum/NanumSquareRoundEB.eot"), /* IE9 Compat Modes */
+    url("../fonts/nanum/NanumSquareRoundEB.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/nanum/NanumSquareRoundEB.woff2") format("woff2"), /* Modern Browsers */
+    url("../fonts/nanum/NanumSquareRoundEB.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/nanum/NanumSquareRoundEB.ttf") format("truetype"); /* Safari, Android, iOS */
+}

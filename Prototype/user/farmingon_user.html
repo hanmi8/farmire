@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Farmire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asset/common/css/reset.css">
+    <link rel="stylesheet" href="../asset/common/css/all.css">
+    <link rel="stylesheet" href="../asset/common/css/font.css">
+    <link rel="stylesheet" href="../asset/common/css/button.css">
+    <link rel="stylesheet" href="../asset/common/css/jquery.bxslider.css">
+    <link rel="stylesheet" href="../asset/common/css/common.css">
+    <link rel="stylesheet" href="../asset/user/css/user_base.css">
+    <script type="text/javascript" src="../asset/common/js/jquery.js"></script>
+    <script type="text/javascript" src="../asset/common/js/common.js"></script>
+    <script type="text/javascript" src="../asset/common/js/jquery.bxslider.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="top mobile">
+        <div class="branding">
+            <a href="index.html" class="go-index">FARMIRE</a>
+            <a href="moreView.html" class="nav-more"><i class="fa fa-bars"></i></a>
+            <a href="#" class="setting"><i class="fa fa-cog"></i></a>
+        </div>
+    </div>
+    <ul class="mobile app-icon farmingon">
+        <li class="on"><a href="farmingon_user.html"><img src="../asset/common/images/icon_farmingon.png"></a></li>
+        <li><a href="farmingon2_user.html"><img src="../asset/common/images/icon_farmingon2.png"></a></li>
+        <li><a href="rmfarm_user.html"><img src="../asset/common/images/icon_rmfarm.png"></a></li>
+    </ul>
+    <div class="nav on">
+        <h1 class="branding">
+            <a href="index.html">FARMIRE</a>
+        </h1>
+        <div class="swapDevice">
+            <select class="form-control" onchange="location.href=this.value">
+                <option value="farmingon_user.html" selected>파밍온</option>
+                <option value="farmingon2_user.html">파밍온2</option>
+                <option value="rmfarm_user.html">알엠팜</option>
+            </select>
+        </div>
+        <ul class="gnb">
+            <li class="on"><a href="farmingon_user.html"><i class="fa fa-user"></i> 장비정보</a></li>
+            <li><a href="farmingon_alert.html"><i class="fa fa-bell"></i> 알림현황</a></li>
+        </ul>
+    </div>
+    <div class="container on farmingon">
+        <div class="container-header">
+            <div class="nav-folding">
+                <a href="#"><i class="fa fa-bars"></i></a>
+            </div>
+            <div class="menu-right">
+                <ul class="common-menu">
+                    <li><a href="notice.html"><i class="fa fa-bullhorn"></i> 공지사항</a></li>
+                    <li><a href="mypage.html"><i class="fa fa-key"></i> 마이페이지</a></li>
+                </ul>
+                <div class="userInfo"><strong>고흥 류춘삼님</strong><a href="#">로그아웃 <i class="fa fa-sign-out-alt"></i></a></div>
+            </div>
+        </div>
+        <div class="container-body">
+            <h2><span class="badge farmingon">파밍온</span> <label>장비정보</label></h2>
+            <div class="mobile device-tab">
+                <ul></ul>
+                <div class="indicator"></div>
+            </div>
+<!--            <div class="user-info">-->
+<!--                <label>고흥 류춘삼님</label>-->
+<!--                <strong>경상북도 경주시 동강면 고흥로 4670</strong>-->
+<!--                <span>01055542441</span>-->
+<!--                <span>ireis@ireis.co.kr</span>-->
+<!--                <button class="btn btn-primary btn-outline"><i class="fa fa-edit"></i> 수정</button>-->
+<!--            </div>-->
+            <div class="contents">
+<!--                <div class="contents-button-group">-->
+<!--                    <div class="main-buttons">-->
+<!--                        <button class="btn btn-primary"><i class="fa fa-file-excel"></i> 엑셀저장</button>-->
+<!--                        <button class="btn btn-primary"><i class="fa fa-check"></i> 선택보기</button>-->
+<!--                        <button class="btn btn-primary"><i class="fa fa-user-plus"></i> 사용자추가</button>-->
+<!--                    </div>-->
+<!--                    <div class="all-folding-buttons">-->
+<!--                        <button class="btn btn-success expand"><i class="fa fa-expand-alt"></i> 모두펼치기</button>-->
+<!--                        <button class="btn btn-success compress"><i class="fa fa-compress-alt"></i> 모두접기</button>-->
+<!--                    </div>-->
+<!--                </div>-->
+                <div class="app-use-status">
+                    <div class="status smartphone">
+                        <div class="main">
+                            <label>사용중인 스마트폰</label>
+                            <strong><span class="badge badge-primary">7</span> <span class="detail">안드로이드(<span>6</span>) / 아이폰(<span>1</span>)</span></strong>
+                        </div>
+                    </div>
+                    <div class="status push">
+                        <div>
+                            <label>Push ON</label>
+                            <strong><span class="badge badge-info">14</span></strong>
+                        </div>
+                        <div>
+                            <label>Push OFF</label>
+                            <strong><span class="badge badge-info">2</span></strong>
+                        </div>
+                    </div>
+                    <div class="status login">
+                        <div>
+                            <label>접속(로그인)</label>
+                            <strong><span class="badge badge-info">7</span></strong>
+                        </div>
+                        <div>
+                            <label>미접속(로그아웃)</label>
+                            <strong><span class="badge badge-info">0</span></strong>
+                        </div>
+                    </div>
+                </div>
+                <section>
+                    <h3 class="farm-info"><div>농장정보</div></h3>
+                    <div class="user-list">
+                        <div class="farm-group on">
+                            <div class="mobile function-button">
+                                <a href="#" class="alert"><i class="fa fa-bell"></i></a>
+                                <a href="#" data-target="#dew-point" class="dew modalCall"><img src="../asset/user/images/icon_function_dew.svg"></a>
+                                <a href="#" data-target="#DIF" class="dif modalCall">DIF</a>
+                                <a href="threshold.html" class="setting"><img src="../asset/user/images/icon_function_setting.svg"></a>
+                            </div>
+                            <div class="farm-group-header">
+                                <div class="farm-info">
+                                    <input type="checkbox">
+    <!--                                <span class="number">217</span>-->
+                                    <label class="farm-name">경주</label>
+                                    <strong class="farm-number">01041082995</strong>
+                                    <span class="farm-address">경상북도 경주시 임계면 용산리 677</span>
+                                </div>
+    <!--                            <div class="farm-button">-->
+    <!--                                <button class="btn btn-success btn-outline"><i class="fa fa-edit"></i> 수정</button>-->
+    <!--                                <button class="btn btn-danger btn-outline"><i class="fa fa-times"></i> 삭제</button>-->
+    <!--                                <button class="btn btn-primary btn-outline"><i class="fa fa-plus"></i> 단말기추가</button>-->
+    <!--                            </div>-->
+                                <div class="farm-device">
+                                    <label class="farm-device-label">등록장비</label>
+                                    <span class="count">5</span>
+                                    <span class="card-folding"><i class="fa fa-chevron-circle-up"></i></span>
+                                </div>
+                            </div>
+                            <div class="farm-group-body">
+                                <div class="card" onclick="location.href='farmingon_user_detail.html'">
+                                    <div class="card-header">
+                                        <div class="list-header">
+                                            <span class="badge badge-success">ON</span>
+                                            <label>01220865040</label>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul>
+                                            <li class="temperature">
+                                                <label>온도</label>
+                                                <div class="mobile min-max">
+                                                    <span><i class="fa fa-caret-up"></i> 5.60</span>
+                                                    <span><i class="fa fa-caret-down"></i> 40.05</span>
+                                                </div>
+                                                <strong>19.00<span class="unit">℃</span></strong>
+                                            </li>
+                                            <li class="humidity">
+                                                <label>습도</label>
+                                                <div class="mobile min-max">
+                                                    <span><i class="fa fa-caret-up"></i> 5.60</span>
+                                                    <span><i class="fa fa-caret-down"></i> 40.05</span>
+                                                </div>
+                                                <strong>68.00<span class="unit">%</span></strong>
+                                            </li>
+                                            <li class="co2">
+                                                <label>CO2</label>
+                                                <div class="mobile min-max">
+                                                    <span><i class="fa fa-caret-up"></i> 5.60</span>
+                                                    <span><i class="fa fa-caret-down"></i> 40.05</span>
+                                                </div>
+                                                <strong>554.0<span class="unit">ppm</span></strong>
+                                            </li>
+                                            <li class="ground-tem">
+                                                <label>지온</label>
+                                                <div class="mobile min-max">
+                                                    <span><i class="fa fa-caret-up"></i> 5.60</span>
+                                                    <span><i class="fa fa-caret-down"></i> 40.05</span>
+                                                </div>
+                                                <strong>14.75<span class="unit">℃</span></strong>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="date">2021-03-14 15:23:00 <a href="#" class="mobile"><i class="fa fa-sync-alt"></i></a></div>
+                                        <div class="crop-name">토마토</div>
+                                    </div>
+                                </div>
+                                <div class="card" onclick="location.href='farmingon_user_detail.html'">
+                                    <div class="card-header">
+                                        <div class="list-header">
+                                            <span class="badge badge-default">OFF</span>
+                                            <label>012208650441</label>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul>
+                                            <li class="temperature">
+                                                <label>온도</label>
+                                                <div class="mobile min-max">
+                                                    <span><i class="fa fa-caret-up"></i> 5.60</span>
+                                                    <span><i class="fa fa-caret-down"></i> 40.05</span>
+                                                </div>
+                                                <strong>19.00<span class="unit">℃</span></strong>
+                                            </li>
+                                            <li class="humidity">
+                                                <label>습도</label>
+                                                <div class="mobile min-max">
+                                                    <span><i class="fa fa-caret-up"></i> 5.60</span>
+                                                    <span><i class="fa fa-caret-down"></i> 40.05</span>
+                                                </div>
+                                                <strong>68.00<span class="unit">%</span></strong>
+                                            </li>
+                                            <li class="co2">
+                                                <label>CO2</label>
+                                                <div class="mobile min-max">
+                                                    <span><i class="fa fa-caret-up"></i> 5.60</span>
+                                                    <span><i class="fa fa-caret-down"></i> 40.05</span>
+                                                </div>
+                                                <strong>554.0<span class="unit">ppm</span></strong>
+                                            </li>
+                                            <li class="ground-tem">
+                                                <label>지온</label>
+                                                <div class="mobile min-max">
+                                                    <span><i class="fa fa-caret-up"></i> 5.60</span>
+                                                    <span><i class="fa fa-caret-down"></i> 40.05</span>
+                                                </div>
+                                                <strong>14.75<span class="unit">℃</span></strong>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="date">2021-03-14 15:23:00 <a href="#" class="mobile"><i class="fa fa-sync-alt"></i></a></div>
+                                        <div class="crop-name">토마토</div>
+                                    </div>
+                                </div>
+                                <div class="card" onclick="location.href='farmingon_user_detail.html'">
+                                    <div class="card-header">
+                                        <div class="list-header">
+                                            <span class="badge badge-success">ON</span>
+                                            <label>012208650442</label>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul>
+                                            <li class="temperature">
+                                                <label>온도</label>
+                                                <div class="mobile min-max">
+                                                    <span><i class="fa fa-caret-up"></i> 5.60</span>
+                                                    <span><i class="fa fa-caret-down"></i> 40.05</span>
+                                                </div>
+                                                <strong>19.00<span class="unit">℃</span></strong>
+                                            </li>
+                                            <li class="humidity">
+                                                <label>습도</label>
+                                                <div class="mobile min-max">
+                                                    <span><i class="fa fa-caret-up"></i> 5.60</span>
+                                                    <span><i class="fa fa-caret-down"></i> 40.05</span>
+                                                </div>
+                                                <strong>68.00<span class="unit">%</span></strong>
+                                            </li>
+                                            <li class="co2">
+                                                <label>CO2</label>
+                                                <div class="mobile min-max">
+                                                    <span><i class="fa fa-caret-up"></i> 5.60</span>
+                                                    <span><i class="fa fa-caret-down"></i> 40.05</span>
+                                                </div>
+                                                <strong>554.0<span class="unit">ppm</span></strong>
+                                            </li>
+                                            <li class="ground-tem">
+                                                <label>지온</label>
+                                                <div class="mobile min-max">
+                                                    <span><i class="fa fa-caret-up"></i> 5.60</span>
+                                                    <span><i class="fa fa-caret-down"></i> 40.05</span>
+                                                </div>
+                                                <strong>14.75<span class="unit">℃</span></strong>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="date">2021-03-14 15:23:00 <a href="#" class="mobile"><i class="fa fa-sync-alt"></i></a></div>
+                                        <div class="crop-name">토마토</div>
+                                    </div>
+                                </div>
+                                <div class="card" onclick="location.href='farmingon_user_detail.html'">
+                                    <div class="card-header">
+                                        <div class="list-header">
+                                            <span class="badge badge-success">ON</span>
+                                            <label>012208650443</label>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul>
+                                            <li class="temperature">
+                                                <label>온도</label>
+                                                <div class="mobile min-max">
+                                                    <span><i class="fa fa-caret-up"></i> 5.60</span>
+                                                    <span><i class="fa fa-caret-down"></i> 40.05</span>
+                                                </div>
+                                                <strong>19.00<span class="unit">℃</span></strong>
+                                            </li>
+                                            <li class="humidity">
+                                                <label>습도</label>
+                                                <div class="mobile min-max">
+                                                    <span><i class="fa fa-caret-up"></i> 5.60</span>
+                                                    <span><i class="fa fa-caret-down"></i> 40.05</span>
+                                                </div>
+                                                <strong>68.00<span class="unit">%</span></strong>
+                                            </li>
+                                            <li class="co2">
+                                                <label>CO2</label>
+                                                <div class="mobile min-max">
+                                                    <span><i class="fa fa-caret-up"></i> 5.60</span>
+                                                    <span><i class="fa fa-caret-down"></i> 40.05</span>
+                                                </div>
+                                                <strong>554.0<span class="unit">ppm</span></strong>
+                                            </li>
+                                            <li class="ground-tem">
+                                                <label>지온</label>
+                                                <div class="mobile min-max">
+                                                    <span><i class="fa fa-caret-up"></i> 5.60</span>
+                                                    <span><i class="fa fa-caret-down"></i> 40.05</span>
+                                                </div>
+                                                <strong>14.75<span class="unit">℃</span></strong>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="date">2021-03-14 15:23:00 <a href="#" class="mobile"><i class="fa fa-sync-alt"></i></a></div>
+                                        <div class="crop-name">토마토</div>
+                                    </div>
+                                </div>
+                                <div class="card" onclick="location.href='farmingon_user_detail.html'">
+                                    <div class="card-header">
+                                        <div class="list-header">
+                                            <span class="badge badge-success">ON</span>
+                                            <label>012208650444</label>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul>
+                                            <li class="temperature">
+                                                <label>온도</label>
+                                                <div class="mobile min-max">
+                                                    <span><i class="fa fa-caret-up"></i> 5.60</span>
+                                                    <span><i class="fa fa-caret-down"></i> 40.05</span>
+                                                </div>
+                                                <strong>19.00<span class="unit">℃</span></strong>
+                                            </li>
+                                            <li class="humidity">
+                                                <label>습도</label>
+                                                <div class="mobile min-max">
+                                                    <span><i class="fa fa-caret-up"></i> 5.60</span>
+                                                    <span><i class="fa fa-caret-down"></i> 40.05</span>
+                                                </div>
+                                                <strong>68.00<span class="unit">%</span></strong>
+                                            </li>
+                                            <li class="co2">
+                                                <label>CO2</label>
+                                                <div class="mobile min-max">
+                                                    <span><i class="fa fa-caret-up"></i> 5.60</span>
+                                                    <span><i class="fa fa-caret-down"></i> 40.05</span>
+                                                </div>
+                                                <strong>554.0<span class="unit">ppm</span></strong>
+                                            </li>
+                                            <li class="ground-tem">
+                                                <label>지온</label>
+                                                <div class="mobile min-max">
+                                                    <span><i class="fa fa-caret-up"></i> 5.60</span>
+                                                    <span><i class="fa fa-caret-down"></i> 40.05</span>
+                                                </div>
+                                                <strong>14.75<span class="unit">℃</span></strong>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="date">2021-03-14 15:23:00 <a href="#" class="mobile"><i class="fa fa-sync-alt"></i></a></div>
+                                        <div class="crop-name">토마토</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal 사용자추가 -->
+<div class="modal" id="addUser">
+    <div class="modal-dialog modal-middle">
+        <div class="modal-header">
+            <h3>사용자등록</h3>
+            <span class="modal-close"></span>
+        </div>
+        <div class="modal-body">
+            <div class="form-vertical">
+                <div class="form-group">
+                    <label class="control-label col-4"><span class="text-danger">*</span> 아이디</label>
+                    <div class="col-8 overCheck">
+                        <input type="text" class="form-control">
+                        <button class="btn btn-primary btn-outline"><i class="fa fa-check"></i> 중복확인</button>
+                        <div class="validation text-danger nonValidate">중복되는 아이디 입니다.</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-4"><span class="text-danger">*</span> 이메일</label>
+                    <div class="col-8 email">
+                        <input type="text" class="form-control"> @
+                        <select class="form-control">
+                            <option>선택하세요.</option>
+                            <option>naver.com</option>
+                            <option>gmail.com</option>
+                            <option>daum.net</option>
+                            <option>직접입력</option>
+                        </select>
+                        <div class="validation text-danger nonValidate">이메일 입력 형식을 확인하세요.</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-4"><span class="text-danger">*</span> 비밀번호</label>
+                    <div class="col-8">
+                        <input type="password" class="form-control">
+                        <div class="validation text-danger nonValidate">비밀번호는 숫자, 영문자를 포함하여 8~20자 이내로 작성해 주세요.</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-4"><span class="text-danger">*</span> 비밀번호 확인</label>
+                    <div class="col-8">
+                        <input type="password" class="form-control">
+                        <div class="validation text-danger nonValidate">비밀번호가 일치하지 않습니다.</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-4">전화번호</label>
+                    <div class="col-8"><input type="text" class="form-control"></div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-4">이메일</label>
+                    <div class="col-8"><input type="text" class="form-control"></div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-4">주소</label>
+                    <div class="col-8"><input type="text" class="form-control"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-default modal-close"><i class="fa fa-times"></i> 취소</button>
+            <button class="btn btn-primary"><i class="fa fa-check"></i> 확인</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- modal 단말기 추가 -->
+<div class="modal" id="addDevice">
+    <div class="modal-dialog modal-middle">
+        <div class="modal-header">
+            <h3>단말기등록</h3>
+            <span class="modal-close"></span>
+        </div>
+        <div class="modal-body">
+            <div class="form-vertical">
+                <div class="form-group">
+                    <label class="control-label col-4"><span class="text-danger">*</span> 서비스</label>
+                    <div class="col-8 half">
+                        <select class="form-control">
+                            <option>파밍온</option>
+                            <option>파밍온2</option>
+                            <option>파밍온2</option>
+                        </select>
+                        <select class="form-control">
+                            <option>보급형</option>
+                            <option>기본형</option>
+                            <option>고급형</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-4"><span class="text-danger">*</span> 단말번호(전화번호)</label>
+                    <div class="col-8 overCheck">
+                        <input type="text" class="form-control">
+                        <button class="btn btn-primary btn-outline"><i class="fa fa-check"></i> 중복확인</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-4">단말설명</label>
+                    <div class="col-8">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-4"><span class="text-danger">*</span> 주소입력</label>
+                    <div class="col-8 overCheck">
+                        <input type="text" class="form-control">
+                        <button class="btn btn-primary btn-outline modalCall" data-target="#deviceLocation"><i class="fa fa-search"></i> 주소찾기</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-4">CO2 센서유무</label>
+                    <div class="col-8">
+                        <label><input type="radio" name="group1" checked> 유</label>
+                        <label><input type="radio" name="group1"> 무</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-4">단말배지센서 개수</label>
+                    <div class="col-8">
+                        <select class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-default modal-close"><i class="fa fa-times"></i> 취소</button>
+            <button class="btn btn-primary"><i class="fa fa-check"></i> 확인</button>
+        </div>
+    </div>
+</div>
+
+<!-- modal 단말위치 조정 -->
+<div class="modal" id="deviceLocation">
+    <div class="modal-dialog modal-large">
+        <div class="modal-header">
+            <h3>단말기위치조정</h3>
+            <span class="modal-close"></span>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-6 address">
+                    <div class="form-group">
+                        <label class="control-label col-4">주소입력</label>
+                        <div class="col-8">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <ul class="searchResult">
+                        <li>
+                            <div class="col-8">
+                                <strong>단양군 단양읍 고수리</strong>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-primary btn-outline"><i class="fa fa-check"></i> 선택</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-8">
+                                <strong>충청북도 단양군 단양읍 고수리</strong>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-primary btn-outline"><i class="fa fa-check"></i> 선택</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-8">
+                                <strong>경상북도 청도군 청도읍 고수리</strong>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-primary btn-outline"><i class="fa fa-check"></i> 선택</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-8">
+                                <strong>충청북도 단양군 단양읍 고수동굴길 8</strong>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-primary btn-outline"><i class="fa fa-check"></i> 선택</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-8">
+                                <strong>경상북도 청도군 청도읍 고수리 364 청도읍 고수리 364번지 </strong>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-primary btn-outline"><i class="fa fa-check"></i> 선택</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-8">
+                                <strong>청도군 경상북도 KR 38340</strong>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-primary btn-outline"><i class="fa fa-check"></i> 선택</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <div class="map">
+                        지도
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-default modal-close"><i class="fa fa-times"></i> 취소</button>
+            <button class="btn btn-primary"><i class="fa fa-check"></i> 확인</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- DIF -->
+<div class="modal" id="DIF">
+    <div class="modal-dialog">
+        <div class="modal-header">전날 DIF 및 주야간 평균온도 <span class="m-close modal-close"></span></div>
+        <div class="modal-body">
+            <ul class="measure">
+                <li>
+                    <div class="measure-item">
+                        <label>일출 전 평균값</label>
+                        <strong>17.31<i class="unit">℃</i></strong>
+                    </div>
+                    <div class="measure-item">
+                        <label>일몰 전 평균값</label>
+                        <strong>24.13<i class="unit">℃</i></strong>
+                    </div>
+                </li>
+                <li>
+                    <div class="measure-item">
+                        <label>일출 후 평균값</label>
+                        <strong>20.72<i class="unit">℃</i></strong>
+                    </div>
+                    <div class="measure-item">
+                        <label>일몰 후 평균값</label>
+                        <strong>15.75<i class="unit">℃</i></strong>
+                    </div>
+                </li>
+                <li>
+                    <div class="measure-item">
+                        <label>주간 DIF</label>
+                        <strong>3.41<i class="unit">℃</i></strong>
+                    </div>
+                    <div class="measure-item">
+                        <label>야간 DIF</label>
+                        <strong>8.38<i class="unit">℃</i></strong>
+                    </div>
+                </li>
+                <li>
+                    <div class="measure-item">
+                        <label>주간 평균온도</label>
+                        <strong>23.71<i class="unit">℃</i></strong>
+                    </div>
+                    <div class="measure-item">
+                        <label>야간 평균온도</label>
+                        <strong>13.39<i class="unit">℃</i></strong>
+                    </div>
+                </li>
+                <li>
+                    <div class="measure-item">
+                        <label>전일 평균온도</label>
+                        <strong>17.87<i class="unit">℃</i></strong>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- 이슬점 및 수분부족량 -->
+<div class="modal" id="dew-point">
+    <div class="modal-dialog">
+        <div class="modal-header">이슬점 및 수분부족량 <span class="m-close modal-close"></span></div>
+        <div class="modal-body dew">
+            <ul class="measure">
+                <li>
+                    <div class="measure-item block">
+                        <label>이슬점(오차율 ±0.35℃)</label>
+                        <strong>9.92<i class="unit">℃</i></strong>
+                    </div>
+                </li>
+                <li>
+                    <div class="measure-item block">
+                        <label>수분부족량</label>
+                        <strong>10.367<i class="unit">g/㎥</i></strong>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    $('.bxslider').bxSlider({
+        mode: 'horizontal',
+        moveSlides: 1,
+        slideMargin: 0,
+        infiniteLoop: true,
+        slideWidth: 660,
+        minSlides: 2,
+        maxSlides: 2,
+        speed: 800,
+    });
+</script>
+
+</body>
+</html>

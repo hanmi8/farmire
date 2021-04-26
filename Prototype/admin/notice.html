@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Farmire</title>
+    <link rel="stylesheet" href="../asset/common/css/reset.css">
+    <link rel="stylesheet" href="../asset/common/css/all.css">
+    <link rel="stylesheet" href="../asset/common/css/font.css">
+    <link rel="stylesheet" href="../asset/common/css/button.css">
+    <link rel="stylesheet" href="../asset/common/css/common.css">
+    <link rel="stylesheet" href="../asset/admin/css/admin_base.css">
+    <script type="text/javascript" src="../asset/common/js/jquery.js"></script>
+    <script type="text/javascript" src="../asset/common/js/common.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="nav on">
+        <h1 class="branding">
+            <a href="index.html">FARMIRE</a>
+        </h1>
+        <div class="swapDevice">
+            <select class="form-control" onchange="location.href=this.value">
+                <option value="farmingon_user.html" selected>파밍온</option>
+                <option value="farmingon2_user.html">파밍온2</option>
+                <option value="rmfarm_user.html">알엠팜</option>
+            </select>
+        </div>
+        <ul class="gnb">
+            <li><a href="farmingon_user.html"><i class="fa fa-user"></i> 사용자관리</a></li>
+            <li><a href="farmingon_monitoring.html"><i class="fa fa-desktop"></i> 단말모니터링</a></li>
+            <li><a href="farmingon_alert.html"><i class="fa fa-bell"></i> 알림현황</a></li>
+            <li><a href="farmingon_app.html"><i class="fa fa-mobile-alt"></i> 앱사용현황</a></li>
+        </ul>
+    </div>
+    <div class="container on">
+        <div class="container-header">
+            <div class="nav-folding">
+                <a href="#"><i class="fa fa-bars"></i></a>
+            </div>
+            <div class="menu-right">
+                <ul class="common-menu">
+                    <li><a href="notice.html"><i class="fa fa-bullhorn"></i> 게시판관리</a></li>
+                    <li><a href="password.html"><i class="fa fa-key"></i> 비밀번호변경</a></li>
+                </ul>
+                <div class="userInfo"><strong>관리자</strong><a href="#">로그아웃 <i class="fa fa-sign-out-alt"></i></a></div>
+            </div>
+        </div>
+        <div class="container-body">
+            <h2>공지사항</h2>
+            <div class="card">
+                <div class="card-body">
+                    <div class="tabSearchWrap row">
+                        <div class="col-1">
+                            <select class="form-control">
+                                <option>10</option>
+                                <option>15</option>
+                                <option>20</option>
+                                <option>30</option>
+                            </select>
+                        </div>
+                        <div class="col-11 tabSearch">
+                            <select class="form-control">
+                                <option>제목</option>
+                            </select>
+                            <input type="text" class="form-control" style="width:300px;">
+                            <button class="btn btn-primary"><i clasa="fa fa-search"></i> 검색</button>
+                        </div>
+                    </div>
+                    <section>
+                        <div class="table-responsive">
+                            <table class="table-vertical">
+                                <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>제목</th>
+                                    <th>작성일</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>30</td>
+                                    <td class="text-left"><a href="notice_detail.html">2016 지역 SW 산업인의 날 "두근두근, 소프트위어를 경험하라" SW 기술 지원 사업 우수사례 발표</a></td>
+                                    <td>2021-01-16</td>
+                                </tr>
+                                <tr>
+                                    <td>29</td>
+                                    <td class="text-left">투입부 불량(일일 배출 데이터 없음)</td>
+                                    <td>2021-01-16</td>
+                                </tr>
+                                <tr>
+                                    <td>28</td>
+                                    <td class="text-left">네트워크 통신 불량(데이터 검출 안됨)</td>
+                                    <td>2021-01-16</td>
+                                </tr>
+                                <tr>
+                                    <td>27</td>
+                                    <td class="text-left">투입부 불량(일일 배출 데이터 없음)</td>
+                                    <td>2021-01-16</td>
+                                </tr>
+                                <tr>
+                                    <td>26</td>
+                                    <td class="text-left">통계 데이터 생성 안됨)</td>
+                                    <td>2021-01-16</td>
+                                </tr>
+                                <tr>
+                                    <td>25</td>
+                                    <td class="text-left">투입부 불량(일일 배출 데이터 없음)</td>
+                                    <td>2021-01-16</td>
+                                </tr>
+                                <tr>
+                                    <td>24</td>
+                                    <td class="text-left">통계 데이터 생성 안됨)</td>
+                                    <td>2021-01-16</td>
+                                </tr>
+                                <tr>
+                                    <td>23</td>
+                                    <td class="text-left">투입부 불량(일일 배출 데이터 없음)</td>
+                                    <td>2021-01-16</td>
+                                </tr>
+                                <tr>
+                                    <td>22</td>
+                                    <td class="text-left">투입부 불량(일일 배출 데이터 없음)</td>
+                                    <td>2021-01-16</td>
+                                </tr>
+                                <tr>
+                                    <td>21</td>
+                                    <td class="text-left">네트워크 통신 불량(데이터 검출 안됨)</td>
+                                    <td>2021-01-16</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="paginate">
+                                <a href="#"><i class="fa fa-angle-double-left"></i></a>
+                                <a href="#"><i class="fa fa-angle-left"></i></a>
+                                <a href="#" class="on">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                                <a href="#">6</a>
+                                <a href="#">7</a>
+                                <a href="#">8</a>
+                                <a href="#">9</a>
+                                <a href="#">10</a>
+                                <a href="#"><i class="fa fa-angle-right"></i></a>
+                                <a href="#"><i class="fa fa-angle-double-right"></i></a>
+                            </div>
+                            <div class="btnWrap">
+                                <button class="btn btn-primary"><i class="fa fa-pencil-alt"></i> 글쓰기</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

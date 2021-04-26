@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Farmire</title>
+    <link rel="stylesheet" href="../asset/common/css/reset.css">
+    <link rel="stylesheet" href="../asset/common/css/all.css">
+    <link rel="stylesheet" href="../asset/common/css/font.css">
+    <link rel="stylesheet" href="../asset/common/css/button.css">
+    <link rel="stylesheet" href="../asset/common/css/common.css">
+    <link rel="stylesheet" href="../asset/admin/css/admin_base.css">
+    <script type="text/javascript" src="../asset/common/js/jquery.js"></script>
+    <script type="text/javascript" src="../asset/common/js/common.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="nav on">
+        <h1 class="branding">
+            <a href="index.html">FARMIRE</a>
+        </h1>
+        <div class="swapDevice">
+            <select class="form-control" onchange="location.href=this.value">
+                <option value="farmingon_user.html">파밍온</option>
+                <option value="farmingon2_user.html">파밍온2</option>
+                <option value="rmfarm_user.html" selected>알엠팜</option>
+            </select>
+        </div>
+        <ul class="gnb">
+            <li><a href="rmfarm_user.html"><i class="fa fa-user"></i> 사용자관리</a></li>
+            <li><a href="rmfarm_crops.html"><i class="fa fa-leaf"></i> 작물관리</a></li>
+            <li class="on"><a href="rmfarm_data.html"><i class="fa fa-cloud-upload-alt"></i> 데이터전송현황</a></li>
+            <li><a href="rmfarm_monitoring.html"><i class="fa fa-desktop"></i> 단말모니터링</a></li>
+            <li><a href="rmfarm_ordering.html"><i class="fa fa-keyboard"></i> 명령어보내기</a></li>
+            <li><a href="rmfarm_app.html"><i class="fa fa-mobile-alt"></i> 앱사용현황</a></li>
+        </ul>
+    </div>
+    <div class="container on rmfarm">
+        <div class="container-header">
+            <div class="nav-folding">
+                <a href="#"><i class="fa fa-bars"></i></a>
+            </div>
+            <div class="menu-right">
+                <ul class="common-menu">
+                    <li><a href="notice.html"><i class="fa fa-bullhorn"></i> 게시판관리</a></li>
+                    <li><a href="password.html"><i class="fa fa-key"></i> 비밀번호변경</a></li>
+                </ul>
+                <div class="userInfo"><strong>관리자</strong><a href="#">로그아웃 <i class="fa fa-sign-out-alt"></i></a></div>
+            </div>
+        </div>
+        <div class="container-body">
+            <h2><span class="badge rmfarm">알엠팜</span> 데이터 전송 현황</h2>
+            <div class="card">
+                <section>
+                    <div class="tabSearchWrap row">
+                        <div class="col-1">
+                            <select class="form-control">
+                                <option>10</option>
+                                <option>15</option>
+                                <option>20</option>
+                                <option>30</option>
+                            </select>
+                        </div>
+                        <div class="col-11 tabSearch">
+                            <select class="form-control">
+                                <option>사용자 전체</option>
+                            </select>
+                            <select class="form-control">
+                                <option>시도(전체)</option>
+                            </select>
+                            <select class="form-control">
+                                <option>전체</option>
+                            </select>
+                            <button class="btn btn-primary"><i class="fa fa-search"></i> 검색</button>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <ul class="dataList">
+                        <li class="on">
+                            <div class="listTitle">
+                                <div class="col-11">
+                                    <strong>KIST 강릉분원</strong>
+                                    <span>강원도 강릉시 사임당로 679</span>
+                                </div>
+                                <div class="col-1 text-right">
+                                    <a href="#"><i class="fa fa-caret-up"></i></a>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table-vertical">
+                                    <thead>
+                                    <tr>
+                                        <th>항목</th>
+                                        <th>진행상태</th>
+                                        <th>건수<br>(총/성공/실패)</th>
+                                        <th>시작시간</th>
+                                        <th>종료시간</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="text-left">API KEY 인증</td>
+                                        <td>대기</td>
+                                        <td>1 / 1 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">명령리스트</td>
+                                        <td>대기</td>
+                                        <td>10 / 10 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">작물정보</td>
+                                        <td>대기</td>
+                                        <td>0 / 0 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">장비정보</td>
+                                        <td>대기</td>
+                                        <td>2 / 2 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">에러로그</td>
+                                        <td>대기</td>
+                                        <td>10 / 10 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">통계 (stat_2017_01031239533_0001)</td>
+                                        <td>대기</td>
+                                        <td>1 / 1 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="listTitle">
+                                <div class="col-11">
+                                    <strong>KT 메로니카</strong>
+                                    <span>전라북도 남원시 주생면 중동리 937</span>
+                                </div>
+                                <div class="col-1 text-right">
+                                    <a href="#"><i class="fa fa-caret-down"></i></a>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table-vertical">
+                                    <thead>
+                                    <tr>
+                                        <th>항목</th>
+                                        <th>진행상태</th>
+                                        <th>건수<br>(총/성공/실패)</th>
+                                        <th>시작시간</th>
+                                        <th>종료시간</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="text-left">API KEY 인증</td>
+                                        <td>대기</td>
+                                        <td>1 / 1 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">명령리스트</td>
+                                        <td>대기</td>
+                                        <td>10 / 10 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">작물정보</td>
+                                        <td>대기</td>
+                                        <td>0 / 0 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">장비정보</td>
+                                        <td>대기</td>
+                                        <td>2 / 2 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">에러로그</td>
+                                        <td>대기</td>
+                                        <td>10 / 10 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">통계 (stat_2017_01031239533_0001)</td>
+                                        <td>대기</td>
+                                        <td>1 / 1 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="listTitle">
+                                <div class="col-11">
+                                    <strong>강원농기 이원경(춘천) </strong>
+                                    <span>강원도 춘천시 우두동 충열로 83</span>
+                                </div>
+                                <div class="col-1 text-right">
+                                    <a href="#"><i class="fa fa-caret-down"></i></a>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table-vertical">
+                                    <thead>
+                                    <tr>
+                                        <th>항목</th>
+                                        <th>진행상태</th>
+                                        <th>건수<br>(총/성공/실패)</th>
+                                        <th>시작시간</th>
+                                        <th>종료시간</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="text-left">API KEY 인증</td>
+                                        <td>대기</td>
+                                        <td>1 / 1 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">명령리스트</td>
+                                        <td>대기</td>
+                                        <td>10 / 10 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">작물정보</td>
+                                        <td>대기</td>
+                                        <td>0 / 0 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">장비정보</td>
+                                        <td>대기</td>
+                                        <td>2 / 2 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">에러로그</td>
+                                        <td>대기</td>
+                                        <td>10 / 10 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">통계 (stat_2017_01031239533_0001)</td>
+                                        <td>대기</td>
+                                        <td>1 / 1 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="listTitle">
+                                <div class="col-11">
+                                    <strong>강원농기 최강준(화훼)</strong>
+                                    <span>강원도 춘천시 신사우동 403-1</span>
+                                </div>
+                                <div class="col-1 text-right">
+                                    <a href="#"><i class="fa fa-caret-down"></i></a>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table-vertical">
+                                    <thead>
+                                    <tr>
+                                        <th>항목</th>
+                                        <th>진행상태</th>
+                                        <th>건수<br>(총/성공/실패)</th>
+                                        <th>시작시간</th>
+                                        <th>종료시간</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="text-left">API KEY 인증</td>
+                                        <td>대기</td>
+                                        <td>1 / 1 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">명령리스트</td>
+                                        <td>대기</td>
+                                        <td>10 / 10 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">작물정보</td>
+                                        <td>대기</td>
+                                        <td>0 / 0 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">장비정보</td>
+                                        <td>대기</td>
+                                        <td>2 / 2 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">에러로그</td>
+                                        <td>대기</td>
+                                        <td>10 / 10 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">통계 (stat_2017_01031239533_0001)</td>
+                                        <td>대기</td>
+                                        <td>1 / 1 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="listTitle">
+                                <div class="col-11">
+                                    <strong>KIST 강릉분원</strong>
+                                    <span>강원도 강릉시 사임당로 679</span>
+                                </div>
+                                <div class="col-1 text-right">
+                                    <a href="#"><i class="fa fa-caret-down"></i></a>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table-vertical">
+                                    <thead>
+                                    <tr>
+                                        <th>항목</th>
+                                        <th>진행상태</th>
+                                        <th>건수<br>(총/성공/실패)</th>
+                                        <th>시작시간</th>
+                                        <th>종료시간</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="text-left">API KEY 인증</td>
+                                        <td>대기</td>
+                                        <td>1 / 1 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">명령리스트</td>
+                                        <td>대기</td>
+                                        <td>10 / 10 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">작물정보</td>
+                                        <td>대기</td>
+                                        <td>0 / 0 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">장비정보</td>
+                                        <td>대기</td>
+                                        <td>2 / 2 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">에러로그</td>
+                                        <td>대기</td>
+                                        <td>10 / 10 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">통계 (stat_2017_01031239533_0001)</td>
+                                        <td>대기</td>
+                                        <td>1 / 1 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="listTitle">
+                                <div class="col-11">
+                                    <strong>KT 메로니카</strong>
+                                    <span>전라북도 남원시 주생면 중동리 937</span>
+                                </div>
+                                <div class="col-1 text-right">
+                                    <a href="#"><i class="fa fa-caret-down"></i></a>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table-vertical">
+                                    <thead>
+                                    <tr>
+                                        <th>항목</th>
+                                        <th>진행상태</th>
+                                        <th>건수<br>(총/성공/실패)</th>
+                                        <th>시작시간</th>
+                                        <th>종료시간</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="text-left">API KEY 인증</td>
+                                        <td>대기</td>
+                                        <td>1 / 1 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">명령리스트</td>
+                                        <td>대기</td>
+                                        <td>10 / 10 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">작물정보</td>
+                                        <td>대기</td>
+                                        <td>0 / 0 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">장비정보</td>
+                                        <td>대기</td>
+                                        <td>2 / 2 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">에러로그</td>
+                                        <td>대기</td>
+                                        <td>10 / 10 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">통계 (stat_2017_01031239533_0001)</td>
+                                        <td>대기</td>
+                                        <td>1 / 1 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="listTitle">
+                                <div class="col-11">
+                                    <strong>강원농기 이원경(춘천) </strong>
+                                    <span>강원도 춘천시 우두동 충열로 83</span>
+                                </div>
+                                <div class="col-1 text-right">
+                                    <a href="#"><i class="fa fa-caret-down"></i></a>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table-vertical">
+                                    <thead>
+                                    <tr>
+                                        <th>항목</th>
+                                        <th>진행상태</th>
+                                        <th>건수<br>(총/성공/실패)</th>
+                                        <th>시작시간</th>
+                                        <th>종료시간</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="text-left">API KEY 인증</td>
+                                        <td>대기</td>
+                                        <td>1 / 1 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">명령리스트</td>
+                                        <td>대기</td>
+                                        <td>10 / 10 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">작물정보</td>
+                                        <td>대기</td>
+                                        <td>0 / 0 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">장비정보</td>
+                                        <td>대기</td>
+                                        <td>2 / 2 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">에러로그</td>
+                                        <td>대기</td>
+                                        <td>10 / 10 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">통계 (stat_2017_01031239533_0001)</td>
+                                        <td>대기</td>
+                                        <td>1 / 1 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="listTitle">
+                                <div class="col-11">
+                                    <strong>강원농기 최강준(화훼)</strong>
+                                    <span>강원도 춘천시 신사우동 403-1</span>
+                                </div>
+                                <div class="col-1 text-right">
+                                    <a href="#"><i class="fa fa-caret-down"></i></a>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table-vertical">
+                                    <thead>
+                                    <tr>
+                                        <th>항목</th>
+                                        <th>진행상태</th>
+                                        <th>건수<br>(총/성공/실패)</th>
+                                        <th>시작시간</th>
+                                        <th>종료시간</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="text-left">API KEY 인증</td>
+                                        <td>대기</td>
+                                        <td>1 / 1 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">명령리스트</td>
+                                        <td>대기</td>
+                                        <td>10 / 10 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">작물정보</td>
+                                        <td>대기</td>
+                                        <td>0 / 0 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">장비정보</td>
+                                        <td>대기</td>
+                                        <td>2 / 2 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">에러로그</td>
+                                        <td>대기</td>
+                                        <td>10 / 10 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">통계 (stat_2017_01031239533_0001)</td>
+                                        <td>대기</td>
+                                        <td>1 / 1 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="listTitle">
+                                <div class="col-11">
+                                    <strong>강원농기 이원경(춘천) </strong>
+                                    <span>강원도 춘천시 우두동 충열로 83</span>
+                                </div>
+                                <div class="col-1 text-right">
+                                    <a href="#"><i class="fa fa-caret-down"></i></a>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table-vertical">
+                                    <thead>
+                                    <tr>
+                                        <th>항목</th>
+                                        <th>진행상태</th>
+                                        <th>건수<br>(총/성공/실패)</th>
+                                        <th>시작시간</th>
+                                        <th>종료시간</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="text-left">API KEY 인증</td>
+                                        <td>대기</td>
+                                        <td>1 / 1 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">명령리스트</td>
+                                        <td>대기</td>
+                                        <td>10 / 10 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">작물정보</td>
+                                        <td>대기</td>
+                                        <td>0 / 0 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">장비정보</td>
+                                        <td>대기</td>
+                                        <td>2 / 2 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">에러로그</td>
+                                        <td>대기</td>
+                                        <td>10 / 10 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">통계 (stat_2017_01031239533_0001)</td>
+                                        <td>대기</td>
+                                        <td>1 / 1 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="listTitle">
+                                <div class="col-11">
+                                    <strong>강원농기 최강준(화훼)</strong>
+                                    <span>강원도 춘천시 신사우동 403-1</span>
+                                </div>
+                                <div class="col-1 text-right">
+                                    <a href="#"><i class="fa fa-caret-down"></i></a>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table-vertical">
+                                    <thead>
+                                    <tr>
+                                        <th>항목</th>
+                                        <th>진행상태</th>
+                                        <th>건수<br>(총/성공/실패)</th>
+                                        <th>시작시간</th>
+                                        <th>종료시간</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="text-left">API KEY 인증</td>
+                                        <td>대기</td>
+                                        <td>1 / 1 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">명령리스트</td>
+                                        <td>대기</td>
+                                        <td>10 / 10 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">작물정보</td>
+                                        <td>대기</td>
+                                        <td>0 / 0 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">장비정보</td>
+                                        <td>대기</td>
+                                        <td>2 / 2 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">에러로그</td>
+                                        <td>대기</td>
+                                        <td>10 / 10 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">통계 (stat_2017_01031239533_0001)</td>
+                                        <td>대기</td>
+                                        <td>1 / 1 / 0</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                        <td>2021-02-07 14:56:30</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="paginate">
+                        <a href="#"><i class="fa fa-angle-double-left"></i></a>
+                        <a href="#"><i class="fa fa-angle-left"></i></a>
+                        <a href="#" class="on">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <a href="#">9</a>
+                        <a href="#">10</a>
+                        <a href="#"><i class="fa fa-angle-right"></i></a>
+                        <a href="#"><i class="fa fa-angle-double-right"></i></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

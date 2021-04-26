@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Farmire</title>
+    <link rel="stylesheet" href="../asset/common/css/reset.css">
+    <link rel="stylesheet" href="../asset/common/css/all.css">
+    <link rel="stylesheet" href="../asset/common/css/font.css">
+    <link rel="stylesheet" href="../asset/common/css/button.css">
+    <link rel="stylesheet" href="../asset/common/css/common.css">
+    <link rel="stylesheet" href="../asset/admin/css/admin_base.css">
+    <script type="text/javascript" src="../asset/common/js/jquery.js"></script>
+    <script type="text/javascript" src="../asset/common/js/common.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="nav on">
+        <h1 class="branding">
+            <a href="index.html">FARMIRE</a>
+        </h1>
+        <div class="swapDevice">
+            <select class="form-control" onchange="location.href=this.value">
+                <option value="farmingon_user.html">파밍온</option>
+                <option value="farmingon2_user.html">파밍온2</option>
+                <option value="rmfarm_user.html" selected>알엠팜</option>
+            </select>
+        </div>
+        <ul class="gnb">
+            <li><a href="rmfarm_user.html"><i class="fa fa-user"></i> 사용자관리</a></li>
+            <li><a href="rmfarm_crops.html"><i class="fa fa-leaf"></i> 작물관리</a></li>
+            <li><a href="rmfarm_data.html"><i class="fa fa-cloud-upload-alt"></i> 데이터전송현황</a></li>
+            <li class="on"><a href="rmfarm_monitoring.html"><i class="fa fa-desktop"></i> 단말모니터링</a></li>
+            <li><a href="rmfarm_ordering.html"><i class="fa fa-keyboard"></i> 명령어보내기</a></li>
+            <li><a href="rmfarm_app.html"><i class="fa fa-mobile-alt"></i> 앱사용현황</a></li>
+        </ul>
+    </div>
+    <div class="container on rmfarm">
+        <div class="container-header">
+            <div class="nav-folding">
+                <a href="#"><i class="fa fa-bars"></i></a>
+            </div>
+            <div class="menu-right">
+                <ul class="common-menu">
+                    <li><a href="notice.html"><i class="fa fa-bullhorn"></i> 게시판관리</a></li>
+                    <li><a href="password.html"><i class="fa fa-key"></i> 비밀번호변경</a></li>
+                </ul>
+                <div class="userInfo"><strong>관리자</strong><a href="#">로그아웃 <i class="fa fa-sign-out-alt"></i></a></div>
+            </div>
+        </div>
+        <div class="container-body">
+            <h2><span class="badge rmfarm">알엠팜</span> 단말모니터링</h2>
+            <div class="form-horizontal search">
+                <div class="d-flex">
+                    <div class="col-11">
+                        <div class="form-group col-3">
+                            <label class="control-label col-4">농장명</label>
+                            <div class="col-8">
+                                <select class="form-control">
+                                    <option>농장명(전체)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="btnWrap">
+                            <button class="btn btn-info"><i class="fa fa-search"></i> 검색</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="card">
+                    <div class="tabSearchWrap row">
+                        <div class="col-1">
+                            <select class="form-control">
+                                <option>10</option>
+                                <option>15</option>
+                                <option>20</option>
+                                <option>30</option>
+                            </select>
+                        </div>
+                    </div>
+                    <section>
+                        <div class="table-responsive">
+                            <table class="table-vertical">
+                                <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>농장명</th>
+                                    <th>급액</th>
+                                    <th>배액</th>
+                                    <th>무게</th>
+                                    <th>온도</th>
+                                    <th>습도</th>
+                                    <th>광량</th>
+                                    <th>배지온도</th>
+                                    <th>배지pH</th>
+                                    <th>배지EC</th>
+                                    <th>측정일시</th>
+                                    <th>DB처리일시</th>
+                                    <th>상태</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>344</td>
+                                    <td>전북 이기성</td>
+                                    <td>4890.00cc</td>
+                                    <td>0.00cc</td>
+                                    <td>17.12kg</td>
+                                    <td>16.30℃</td>
+                                    <td>88.88%</td>
+                                    <td>2033.00lux</td>
+                                    <td>14.70℃</td>
+                                    <td>5.5</td>
+                                    <td>1.87ms/cm</td>
+                                    <td>2021-03-19 15:37:00</td>
+                                    <td>2021-03-19 15:37:00</td>
+                                    <td>CO2에러</td>
+                                </tr>
+                                <tr>
+                                    <td>343</td>
+                                    <td>강릉 이기호</td>
+                                    <td>4890.00cc</td>
+                                    <td>0.00cc</td>
+                                    <td>17.12kg</td>
+                                    <td>16.30℃</td>
+                                    <td>88.88%</td>
+                                    <td>2033.00lux</td>
+                                    <td>14.70℃</td>
+                                    <td>5.5</td>
+                                    <td>1.87ms/cm</td>
+                                    <td>2021-03-19 15:37:00</td>
+                                    <td>2021-03-19 15:37:00</td>
+                                    <td>단말신규등록</td>
+                                </tr>
+                                <tr>
+                                    <td>344</td>
+                                    <td>전북 이기성</td>
+                                    <td>4890.00cc</td>
+                                    <td>0.00cc</td>
+                                    <td>17.12kg</td>
+                                    <td>16.30℃</td>
+                                    <td>88.88%</td>
+                                    <td>2033.00lux</td>
+                                    <td>14.70℃</td>
+                                    <td>5.5</td>
+                                    <td>1.87ms/cm</td>
+                                    <td>2021-03-19 15:37:00</td>
+                                    <td>2021-03-19 15:37:00</td>
+                                    <td>CO2에러</td>
+                                </tr>
+                                <tr>
+                                    <td>343</td>
+                                    <td>강릉 이기호</td>
+                                    <td>4890.00cc</td>
+                                    <td>0.00cc</td>
+                                    <td>17.12kg</td>
+                                    <td>16.30℃</td>
+                                    <td>88.88%</td>
+                                    <td>2033.00lux</td>
+                                    <td>14.70℃</td>
+                                    <td>5.5</td>
+                                    <td>1.87ms/cm</td>
+                                    <td>2021-03-19 15:37:00</td>
+                                    <td>2021-03-19 15:37:00</td>
+                                    <td>단말신규등록</td>
+                                </tr>
+                                <tr>
+                                    <td>344</td>
+                                    <td>전북 이기성</td>
+                                    <td>4890.00cc</td>
+                                    <td>0.00cc</td>
+                                    <td>17.12kg</td>
+                                    <td>16.30℃</td>
+                                    <td>88.88%</td>
+                                    <td>2033.00lux</td>
+                                    <td>14.70℃</td>
+                                    <td>5.5</td>
+                                    <td>1.87ms/cm</td>
+                                    <td>2021-03-19 15:37:00</td>
+                                    <td>2021-03-19 15:37:00</td>
+                                    <td>CO2에러</td>
+                                </tr>
+                                <tr>
+                                    <td>343</td>
+                                    <td>강릉 이기호</td>
+                                    <td>4890.00cc</td>
+                                    <td>0.00cc</td>
+                                    <td>17.12kg</td>
+                                    <td>16.30℃</td>
+                                    <td>88.88%</td>
+                                    <td>2033.00lux</td>
+                                    <td>14.70℃</td>
+                                    <td>5.5</td>
+                                    <td>1.87ms/cm</td>
+                                    <td>2021-03-19 15:37:00</td>
+                                    <td>2021-03-19 15:37:00</td>
+                                    <td>단말신규등록</td>
+                                </tr>
+                                <tr>
+                                    <td>344</td>
+                                    <td>전북 이기성</td>
+                                    <td>4890.00cc</td>
+                                    <td>0.00cc</td>
+                                    <td>17.12kg</td>
+                                    <td>16.30℃</td>
+                                    <td>88.88%</td>
+                                    <td>2033.00lux</td>
+                                    <td>14.70℃</td>
+                                    <td>5.5</td>
+                                    <td>1.87ms/cm</td>
+                                    <td>2021-03-19 15:37:00</td>
+                                    <td>2021-03-19 15:37:00</td>
+                                    <td>CO2에러</td>
+                                </tr>
+                                <tr>
+                                    <td>343</td>
+                                    <td>강릉 이기호</td>
+                                    <td>4890.00cc</td>
+                                    <td>0.00cc</td>
+                                    <td>17.12kg</td>
+                                    <td>16.30℃</td>
+                                    <td>88.88%</td>
+                                    <td>2033.00lux</td>
+                                    <td>14.70℃</td>
+                                    <td>5.5</td>
+                                    <td>1.87ms/cm</td>
+                                    <td>2021-03-19 15:37:00</td>
+                                    <td>2021-03-19 15:37:00</td>
+                                    <td>단말신규등록</td>
+                                </tr>
+                                <tr>
+                                    <td>344</td>
+                                    <td>전북 이기성</td>
+                                    <td>4890.00cc</td>
+                                    <td>0.00cc</td>
+                                    <td>17.12kg</td>
+                                    <td>16.30℃</td>
+                                    <td>88.88%</td>
+                                    <td>2033.00lux</td>
+                                    <td>14.70℃</td>
+                                    <td>5.5</td>
+                                    <td>1.87ms/cm</td>
+                                    <td>2021-03-19 15:37:00</td>
+                                    <td>2021-03-19 15:37:00</td>
+                                    <td>CO2에러</td>
+                                </tr>
+                                <tr>
+                                    <td>343</td>
+                                    <td>강릉 이기호</td>
+                                    <td>4890.00cc</td>
+                                    <td>0.00cc</td>
+                                    <td>17.12kg</td>
+                                    <td>16.30℃</td>
+                                    <td>88.88%</td>
+                                    <td>2033.00lux</td>
+                                    <td>14.70℃</td>
+                                    <td>5.5</td>
+                                    <td>1.87ms/cm</td>
+                                    <td>2021-03-19 15:37:00</td>
+                                    <td>2021-03-19 15:37:00</td>
+                                    <td>단말신규등록</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="paginate">
+                                <a href="#"><i class="fa fa-angle-double-left"></i></a>
+                                <a href="#"><i class="fa fa-angle-left"></i></a>
+                                <a href="#" class="on">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                                <a href="#">6</a>
+                                <a href="#">7</a>
+                                <a href="#">8</a>
+                                <a href="#">9</a>
+                                <a href="#">10</a>
+                                <a href="#"><i class="fa fa-angle-right"></i></a>
+                                <a href="#"><i class="fa fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
