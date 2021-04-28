@@ -13,6 +13,7 @@
 .notice-list li a strong {width:80%;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;line-height:1.2rem;}
 .notice-list li a span {text-align:right;}
 
+.rmfarm .card-header strong {position:absolute;right:.5rem;color:#888;}
 
 .notification-content strong {display:block;text-align:left;}
 .order .card {margin-bottom:20px;}
@@ -22,10 +23,10 @@
 
 /* light */
 body {background:#f9f9f9;}
-.nav {background:url('../../common/images/bg0.png') no-repeat left 7rem /cover, linear-gradient(#005d47, #25b14a);}
-.nav .branding {background:#005d47;}
+.nav {background:url('../../common/images/bg9.png') no-repeat center top /cover, linear-gradient(#003b2e, #25b14a);}
+.nav .branding {background:#003b2e;}
 .nav .gnb li a {color:#fff;}
-.nav .gnb li a:hover,.nav .gnb li.on a {background: #00392b;}
+.nav .gnb li a:hover,.nav .gnb li.on a {background: #003915;}
 .container .container-header {background:url('../../common/images/bg3.png') no-repeat left top /cover #ff9d49;}
 .container .container-body {background:url('../../common/images/bg6.png') no-repeat left -80px /100%;}
 .farm-group .farm-group-body .card {border:2px solid #ccc;}
@@ -35,21 +36,6 @@ body {background:#f9f9f9;}
 .user-list .user-group {border-left-color:#ffe9d6;}
 .user-list .user-group .user-name {background:#ffe9d6;}
 
-/* dark */
-/*body {background:#f9f9f9;}*/
-/*.nav {background:url('../../common/images/bg9.png') no-repeat center top /cover, linear-gradient(#003b2e, #25b14a);}*/
-/*.nav .branding {background:#003b2e;}*/
-/*.nav .gnb li a {color:#fff;}*/
-/*.nav .gnb li a:hover,.nav .gnb li.on a {background: #003915;}*/
-/*.container .container-header {background:url('../../common/images/bg3.png') no-repeat left top /cover #d44d00;}*/
-/*.container .container-body {background:url('../../common/images/bg6.png') no-repeat left -80px /100%;}*/
-/*!*.card {border-width:2px;}*!*/
-/*!*.card:hover {border:2px solid #ffa46f;}*!*/
-/*!*.farm-group .farm-group-body .card:hover {background: #ffefe1;}*!*/
-/*.farm-group .farm-group-body .card:hover .card-body {background: #fff3d1;}*/
-/*!*.farm-group .farm-group-body .card-body {background: #fff6e9;}*!*/
-/*.user-list .user-group {border-left-color: #f7d0b4;}*/
-/*.user-list .user-group .user-name {background:#f7d0b4;}*/
 
 
 .colors {background:#8176d4}

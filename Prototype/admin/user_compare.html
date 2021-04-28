@@ -29,49 +29,53 @@
     </div>
     <div class="container on">
         <div class="container-header">
-            <div class="folding col-4"><a href="#"><i class="fa fa-bars"></i></a></div>
-            <div class="userInfo col-8"><strong>관리자</strong><a href="#">로그아웃 <i class="fa fa-sign-out-alt"></i></a></div>
+            <div class="nav-folding">
+                <a href="#"><i class="fa fa-bars"></i></a>
+            </div>
+            <div class="menu-right">
+                <ul class="common-menu">
+                    <li><a href="app.html"><i class="fa fa-mobile-alt"></i> 앱사용현황</a></li>
+                    <li><a href="notice.html"><i class="fa fa-bullhorn"></i> 게시판관리</a></li>
+                    <li><a href="password.html"><i class="fa fa-key"></i> 비밀번호변경</a></li>
+                </ul>
+                <div class="userInfo"><strong>관리자</strong><a href="#">로그아웃 <i class="fa fa-sign-out-alt"></i></a></div>
+            </div>
         </div>
         <div class="container-body">
             <h2>사용자 관리</h2>
-            <div class="panel">
-                <div class="panel-body">
-                    <div class="form-horizontal search">
-                        <a href="#" class="searchFolding"><i class="fa fa-chevron-circle-up"></i></a>
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <label class="control-label col-2">날짜</label>
-                                    <div class="col-8 term">
-                                        <input type="date" class="form-control">
-                                        <span>~</span>
-                                        <input type="date" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <label class="control-label col-2">접속상태</label>
-                                    <div class="col-8">
-                                        <label><input type="radio"> 온라인</label>
-                                        <label><input type="radio"> 오프라인</label>
-                                    </div>
-                                </div>
+            <div class="form-horizontal search">
+                <div class="row">
+                    <div class="col-11 d-flex">
+                        <div class="form-group col-6">
+                            <label class="control-label col-2">날짜</label>
+                            <div class="col-8 term">
+                                <input type="date" class="form-control">
+                                <span>~</span>
+                                <input type="date" class="form-control">
                             </div>
                         </div>
+                        <div class="form-group col-6">
+                            <label class="control-label col-2">접속상태</label>
+                            <div class="col-8">
+                                <label><input type="radio"> 온라인</label>
+                                <label><input type="radio"> 오프라인</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1 d-flex">
                         <div class="btnWrap">
                             <button class="btn btn-primary"><i class="fa fa-search"></i> 검색</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="panel">
-                <ul class="tabs">
-                    <li class="on"><a href="#tab01">양액</a></li>
-                    <li><a href="#tab02">온도/습도/배지온도/광량</a></li>
-                    <li><a href="#tab03">EC/pH</a></li>
-                </ul>
-                <div class="tab-contents on panel-body" id="tab01">
+            <ul class="tabs">
+                <li class="on"><a href="#tab01">양액</a></li>
+                <li><a href="#tab02">온도/습도/배지온도/광량</a></li>
+                <li><a href="#tab03">EC/pH</a></li>
+            </ul>
+            <div class="tab-contents on panel-body" id="tab01">
+                <div class="card">
                     <div class="row">
                         <div class="col-6">
                             <h4>논산 김준태 / 0001 / 토마토</h4>
@@ -83,27 +87,32 @@
                         </div>
                     </div>
                 </div>
+            </div>
                 <div class="tab-contents panel-body" id="tab02">
-                    <div class="row">
-                        <div class="col-6">
-                            <h4>논산 김준태 / 0001 / 토마토</h4>
-                            <div class="chart">CHART<br> 온도/습도/배지온도/광량</div>
-                        </div>
-                        <div class="col-6">
-                            <h4>논산 양승구 / 0001 / 토마토</h4>
-                            <div class="chart">CHART<br> 온도/습도/배지온도/광량</div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-6">
+                                <h4>논산 김준태 / 0001 / 토마토</h4>
+                                <div class="chart">CHART<br> 온도/습도/배지온도/광량</div>
+                            </div>
+                            <div class="col-6">
+                                <h4>논산 양승구 / 0001 / 토마토</h4>
+                                <div class="chart">CHART<br> 온도/습도/배지온도/광량</div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="tab-contents panel-body" id="tab03">
-                    <div class="row">
-                        <div class="col-6">
-                            <h4>논산 김준태 / 0001 / 토마토</h4>
-                            <div class="chart">CHART<br> EC/pH</div>
-                        </div>
-                        <div class="col-6">
-                            <h4>논산 양승구 / 0001 / 토마토</h4>
-                            <div class="chart">CHART<br> EC/pH</div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-6">
+                                <h4>논산 김준태 / 0001 / 토마토</h4>
+                                <div class="chart">CHART<br> EC/pH</div>
+                            </div>
+                            <div class="col-6">
+                                <h4>논산 양승구 / 0001 / 토마토</h4>
+                                <div class="chart">CHART<br> EC/pH</div>
+                            </div>
                         </div>
                     </div>
                 </div>

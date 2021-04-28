@@ -31,7 +31,6 @@
             <li><a href="rmfarm_data.html"><i class="fa fa-cloud-upload-alt"></i> 데이터전송현황</a></li>
             <li><a href="rmfarm_monitoring.html"><i class="fa fa-desktop"></i> 단말모니터링</a></li>
             <li><a href="rmfarm_ordering.html"><i class="fa fa-keyboard"></i> 명령어보내기</a></li>
-            <li><a href="rmfarm_app.html"><i class="fa fa-mobile-alt"></i> 앱사용현황</a></li>
         </ul>
     </div>
     <div class="container on admin rmfarm">
@@ -41,6 +40,7 @@
             </div>
             <div class="menu-right">
                 <ul class="common-menu">
+                    <li><a href="app.html"><i class="fa fa-mobile-alt"></i> 앱사용현황</a></li>
                     <li><a href="notice.html"><i class="fa fa-bullhorn"></i> 게시판관리</a></li>
                     <li><a href="password.html"><i class="fa fa-key"></i> 비밀번호변경</a></li>
                 </ul>
@@ -232,8 +232,8 @@
                 <div class="contents-button-group">
                     <div class="main-buttons">
                         <button class="btn btn-primary"><i class="fa fa-file-excel"></i> 엑셀저장</button>
-                        <button class="btn btn-primary"><i class="fa fa-check"></i> 선택보기</button>
-                        <button class="btn btn-primary"><i class="fa fa-user-plus"></i> 사용자추가</button>
+                        <button class="btn btn-primary" onclick="location.href='user_compare.html'"><i class="fa fa-check"></i> 선택보기</button>
+                        <button class="btn btn-primary modalCall" data-target="#addUser"><i class="fa fa-user-plus"></i> 사용자추가</button>
                     </div>
                     <div class="all-folding-buttons">
                         <button class="btn btn-success expand"><i class="fa fa-expand-alt"></i> 모두펼치기</button>
@@ -242,22 +242,23 @@
                 </div>
                 <div class="user-list">
                     <div class="user-group">
-                        <label class="user-name">
+                        <div class="user-name">
                             <strong>평창 지준구</strong>
+                            <button class="btn btn-primary btn-outline modalCall" data-target="#addAgent"><i class="fa fa-plus"></i> 에이전트 추가</button>
                             <span class="farm-folding"><i class="fa fa-chevron-up"></i></span>
-                        </label>
+                        </div>
                         <div class="farm-group">
                             <div class="farm-group-header">
                                 <div class="farm-info">
-                                    <input type="checkbox">
                                     <span class="number">236</span>
                                     <label class="farm-name">임계농장</label>
                                     <strong class="farm-number">01033869194</strong>
                                     <span class="farm-address">강원도 정선군 임계면 용산리 677</span>
                                 </div>
                                 <div class="farm-button">
-                                    <button class="btn btn-success btn-outline"><i class="fa fa-edit"></i> 수정</button>
-                                    <button class="btn btn-danger btn-outline"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-success btn-outline modalCall" data-target="#modifyUser"><i class="fa fa-edit"></i> 수정</button>
+                                    <button class="btn btn-danger btn-outline modalCall" data-target="#deleteUser"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-primary btn-outline modalCall" data-target="#addDevice"><i class="fa fa-plus"></i> 단말기추가</button>
                                 </div>
                                 <div class="farm-device">
                                     <label class="farm-device-label">등록장비</label>
@@ -269,9 +270,10 @@
                                 <div class="card" onclick="location.href='rmfarm_user_detail.html'">
                                     <div class="card-header">
                                         <div class="list-header">
-                                            <!--<span class="badge badge-primary">알엠팜</span>-->
+                                            <input type="checkbox">
                                             <span class="badge badge-success">ON</span>
                                             <label>토마토1</label>
+                                            <strong>고급형</strong>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -322,9 +324,10 @@
                                 <div class="card" onclick="location.href='rmfarm_user_detail.html'">
                                     <div class="card-header">
                                         <div class="list-header">
-                                            <!--<span class="badge badge-primary">알엠팜</span>-->
+                                            <input type="checkbox">
                                             <span class="badge badge-success">ON</span>
                                             <label>토마토2</label>
+                                            <strong>고급형</strong>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -377,15 +380,15 @@
                         <div class="farm-group">
                             <div class="farm-group-header">
                                 <div class="farm-info">
-                                    <input type="checkbox">
                                     <span class="number">235</span>
                                     <label class="farm-name">평창 A</label>
                                     <strong class="farm-number">01033868919</strong>
                                     <span class="farm-address">강원도 평창군 대화면 하안미리 2018</span>
                                 </div>
                                 <div class="farm-button">
-                                    <button class="btn btn-success btn-outline"><i class="fa fa-edit"></i> 수정</button>
-                                    <button class="btn btn-danger btn-outline"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-success btn-outline modalCall" data-target="#modifyUser"><i class="fa fa-edit"></i> 수정</button>
+                                    <button class="btn btn-danger btn-outline modalCall" data-target="#deleteUser"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-primary btn-outline modalCall" data-target="#addDevice"><i class="fa fa-plus"></i> 단말기추가</button>
                                 </div>
                                 <div class="farm-device">
                                     <label class="farm-device-label">등록장비</label>
@@ -397,9 +400,10 @@
                                 <div class="card" onclick="location.href='rmfarm_user_detail.html'">
                                     <div class="card-header">
                                         <div class="list-header">
-                                            <!--<span class="badge badge-primary">알엠팜</span>-->
+                                            <input type="checkbox">
                                             <span class="badge badge-success">ON</span>
                                             <label>토마토1</label>
+                                            <strong>고급형</strong>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -450,9 +454,10 @@
                                 <div class="card" onclick="location.href='rmfarm_user_detail.html'">
                                     <div class="card-header">
                                         <div class="list-header">
-                                            <!--<span class="badge badge-primary">알엠팜</span>-->
-                                            <span class="badge badge-default">OFF</span>
+                                            <input type="checkbox">
+                                            <span class="badge badge-success">OFF</span>
                                             <label>토마토2</label>
+                                            <strong>고급형</strong>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -503,9 +508,10 @@
                                 <div class="card" onclick="location.href='rmfarm_user_detail.html'">
                                     <div class="card-header">
                                         <div class="list-header">
-                                            <!--<span class="badge badge-primary">알엠팜</span>-->
+                                            <input type="checkbox">
                                             <span class="badge badge-success">ON</span>
                                             <label>토마토3</label>
+                                            <strong>고급형</strong>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -556,9 +562,10 @@
                                 <div class="card" onclick="location.href='rmfarm_user_detail.html'">
                                     <div class="card-header">
                                         <div class="list-header">
-                                            <!--<span class="badge badge-primary">알엠팜</span>-->
+                                            <input type="checkbox">
                                             <span class="badge badge-success">ON</span>
                                             <label>토마토4</label>
+                                            <strong>고급형</strong>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -611,15 +618,15 @@
                         <div class="farm-group">
                             <div class="farm-group-header">
                                 <div class="farm-info">
-                                    <input type="checkbox">
                                     <span class="number">234</span>
                                     <label class="farm-name">평창 B</label>
                                     <strong class="farm-number">010338689192</strong>
                                     <span class="farm-address">강원도 평창군 대화면 하안미리 2018</span>
                                 </div>
                                 <div class="farm-button">
-                                    <button class="btn btn-success btn-outline"><i class="fa fa-edit"></i> 수정</button>
-                                    <button class="btn btn-danger btn-outline"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-success btn-outline modalCall" data-target="#modifyUser"><i class="fa fa-edit"></i> 수정</button>
+                                    <button class="btn btn-danger btn-outline modalCall" data-target="#deleteUser"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-primary btn-outline modalCall" data-target="#addDevice"><i class="fa fa-plus"></i> 단말기추가</button>
                                 </div>
                                 <div class="farm-device">
                                     <label class="farm-device-label">등록장비</label>
@@ -631,9 +638,10 @@
                                 <div class="card" onclick="location.href='rmfarm_user_detail.html'">
                                     <div class="card-header">
                                         <div class="list-header">
-                                            <!--<span class="badge badge-primary">알엠팜</span>-->
-                                            <span class="badge badge-default">OFF</span>
+                                            <input type="checkbox">
+                                            <span class="badge badge-success">OFF</span>
                                             <label>토마토1</label>
+                                            <strong>고급형</strong>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -684,9 +692,10 @@
                                 <div class="card" onclick="location.href='rmfarm_user_detail.html'">
                                     <div class="card-header">
                                         <div class="list-header">
-                                            <!--<span class="badge badge-primary">알엠팜</span>-->
+                                            <input type="checkbox">
                                             <span class="badge badge-success">ON</span>
                                             <label>토마토2</label>
+                                            <strong>고급형</strong>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -737,9 +746,10 @@
                                 <div class="card" onclick="location.href='rmfarm_user_detail.html'">
                                     <div class="card-header">
                                         <div class="list-header">
-                                            <!--<span class="badge badge-primary">알엠팜</span>-->
+                                            <input type="checkbox">
                                             <span class="badge badge-success">ON</span>
                                             <label>토마토1</label>
+                                            <strong>고급형</strong>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -792,15 +802,15 @@
                         <div class="farm-group">
                             <div class="farm-group-header">
                                 <div class="farm-info">
-                                    <input type="checkbox">
                                     <span class="number">233</span>
                                     <label class="farm-name">평창 C</label>
                                     <strong class="farm-number">010338689193</strong>
                                     <span class="farm-address">강원도 평창군 대화면 하안미리 2018</span>
                                 </div>
                                 <div class="farm-button">
-                                    <button class="btn btn-success btn-outline"><i class="fa fa-edit"></i> 수정</button>
-                                    <button class="btn btn-danger btn-outline"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-success btn-outline modalCall" data-target="#modifyUser"><i class="fa fa-edit"></i> 수정</button>
+                                    <button class="btn btn-danger btn-outline modalCall" data-target="#deleteUser"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-primary btn-outline modalCall" data-target="#addDevice"><i class="fa fa-plus"></i> 단말기추가</button>
                                 </div>
                                 <div class="farm-device">
                                     <label class="farm-device-label">등록장비</label>
@@ -812,9 +822,10 @@
                                 <div class="card" onclick="location.href='rmfarm_user_detail.html'">
                                     <div class="card-header">
                                         <div class="list-header">
-                                            <!--<span class="badge badge-primary">알엠팜</span>-->
-                                            <span class="badge badge-default">OFF</span>
+                                            <input type="checkbox">
+                                            <span class="badge badge-success">OFF</span>
                                             <label>토마토1</label>
+                                            <strong>고급형</strong>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -865,9 +876,10 @@
                                 <div class="card" onclick="location.href='rmfarm_user_detail.html'">
                                     <div class="card-header">
                                         <div class="list-header">
-                                            <!--<span class="badge badge-primary">알엠팜</span>-->
+                                            <input type="checkbox">
                                             <span class="badge badge-success">ON</span>
                                             <label>토마토2</label>
+                                            <strong>고급형</strong>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -919,22 +931,23 @@
                         </div>
                     </div>
                     <div class="user-group">
-                        <label class="user-name">
+                        <div class="user-name">
                             <strong>전남 농기원</strong>
+                            <button class="btn btn-primary btn-outline modalCall" data-target="#addAgent"><i class="fa fa-plus"></i> 에이전트 추가</button>
                             <span class="farm-folding"><i class="fa fa-chevron-up"></i></span>
-                        </label>
+                        </div>
                         <div class="farm-group">
                             <div class="farm-group-header">
                                 <div class="farm-info">
-                                    <input type="checkbox">
                                     <span class="number">232</span>
                                     <label class="farm-name">전남 농기원 A</label>
                                     <strong class="farm-number">01026227186</strong>
                                     <span class="farm-address">전라남도 나주시 산포면 산제리 206-7</span>
                                 </div>
                                 <div class="farm-button">
-                                    <button class="btn btn-success btn-outline"><i class="fa fa-edit"></i> 수정</button>
-                                    <button class="btn btn-danger btn-outline"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-success btn-outline modalCall" data-target="#modifyUser"><i class="fa fa-edit"></i> 수정</button>
+                                    <button class="btn btn-danger btn-outline modalCall" data-target="#deleteUser"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-primary btn-outline modalCall" data-target="#addDevice"><i class="fa fa-plus"></i> 단말기추가</button>
                                 </div>
                                 <div class="farm-device">
                                     <label class="farm-device-label">등록장비</label>
@@ -946,9 +959,10 @@
                                 <div class="card" onclick="location.href='rmfarm_user_detail.html'">
                                     <div class="card-header">
                                         <div class="list-header">
-                                            <!--<span class="badge badge-primary">알엠팜</span>-->
+                                            <input type="checkbox">
                                             <span class="badge badge-success">ON</span>
                                             <label>파프리카1</label>
+                                            <strong>고급형</strong>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -999,9 +1013,10 @@
                                 <div class="card" onclick="location.href='rmfarm_user_detail.html'">
                                     <div class="card-header">
                                         <div class="list-header">
-                                            <!--<span class="badge badge-primary">알엠팜</span>-->
+                                            <input type="checkbox">
                                             <span class="badge badge-success">ON</span>
                                             <label>파프리카2</label>
+                                            <strong>고급형</strong>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -1054,15 +1069,15 @@
                         <div class="farm-group">
                             <div class="farm-group-header">
                                 <div class="farm-info">
-                                    <input type="checkbox">
                                     <span class="number">231</span>
                                     <label class="farm-name">전남 농기원 B</label>
                                     <strong class="farm-number">01026227186</strong>
                                     <span class="farm-address">전라남도 나주시 산포면 산제리 206-7</span>
                                 </div>
                                 <div class="farm-button">
-                                    <button class="btn btn-success btn-outline"><i class="fa fa-edit"></i> 수정</button>
-                                    <button class="btn btn-danger btn-outline"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-success btn-outline modalCall" data-target="#modifyUser"><i class="fa fa-edit"></i> 수정</button>
+                                    <button class="btn btn-danger btn-outline modalCall" data-target="#deleteUser"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-primary btn-outline modalCall" data-target="#addDevice"><i class="fa fa-plus"></i> 단말기추가</button>
                                 </div>
                                 <div class="farm-device">
                                     <label class="farm-device-label">등록장비</label>
@@ -1074,9 +1089,10 @@
                                 <div class="card" onclick="location.href='rmfarm_user_detail.html'">
                                     <div class="card-header">
                                         <div class="list-header">
-                                            <!--<span class="badge badge-primary">알엠팜</span>-->
+                                            <input type="checkbox">
                                             <span class="badge badge-success">ON</span>
                                             <label>파프리카1</label>
+                                            <strong>고급형</strong>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -1127,9 +1143,10 @@
                                 <div class="card" onclick="location.href='rmfarm_user_detail.html'">
                                     <div class="card-header">
                                         <div class="list-header">
-                                            <!--<span class="badge badge-primary">알엠팜</span>-->
+                                            <input type="checkbox">
                                             <span class="badge badge-success">ON</span>
                                             <label>파프리카2</label>
+                                            <strong>고급형</strong>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -1181,22 +1198,23 @@
                         </div>
                     </div>
                     <div class="user-group">
-                        <label class="user-name">
+                        <div class="user-name">
                             <strong>청도 김병현</strong>
+                            <button class="btn btn-primary btn-outline modalCall" data-target="#addAgent"><i class="fa fa-plus"></i> 에이전트 추가</button>
                             <span class="farm-folding"><i class="fa fa-chevron-up"></i></span>
-                        </label>
+                        </div>
                         <div class="farm-group">
                             <div class="farm-group-header">
                                 <div class="farm-info">
-                                    <input type="checkbox">
                                     <span class="number">229</span>
                                     <label class="farm-name">청도 김병현</label>
                                     <strong class="farm-number">01065015889</strong>
                                     <span class="farm-address">경상북도 청도군 화양읍 고평리 536-2</span>
                                 </div>
                                 <div class="farm-button">
-                                    <button class="btn btn-success btn-outline"><i class="fa fa-edit"></i> 수정</button>
-                                    <button class="btn btn-danger btn-outline"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-success btn-outline modalCall" data-target="#modifyUser"><i class="fa fa-edit"></i> 수정</button>
+                                    <button class="btn btn-danger btn-outline modalCall" data-target="#deleteUser"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-primary btn-outline modalCall" data-target="#addDevice"><i class="fa fa-plus"></i> 단말기추가</button>
                                 </div>
                                 <div class="farm-device">
                                     <label class="farm-device-label">등록장비</label>
@@ -1208,9 +1226,10 @@
                                 <div class="card" onclick="location.href='rmfarm_user_detail.html'">
                                     <div class="card-header">
                                         <div class="list-header">
-                                            <!--<span class="badge badge-primary">알엠팜</span>-->
+                                            <input type="checkbox">
                                             <span class="badge badge-success">ON</span>
                                             <label>토마토1</label>
+                                            <strong>고급형</strong>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -1262,22 +1281,23 @@
                         </div>
                     </div>
                     <div class="user-group">
-                        <label class="user-name">
+                        <div class="user-name">
                             <strong>김해 김상석 </strong>
+                            <button class="btn btn-primary btn-outline modalCall" data-target="#addAgent"><i class="fa fa-plus"></i> 에이전트 추가</button>
                             <span class="farm-folding"><i class="fa fa-chevron-up"></i></span>
-                        </label>
+                        </div>
                         <div class="farm-group">
                             <div class="farm-group-header">
                                 <div class="farm-info">
-                                    <input type="checkbox">
                                     <span class="number">229</span>
                                     <label class="farm-name">김해 김상석 </label>
                                     <strong class="farm-number">01038854729</strong>
                                     <span class="farm-address">경상남도 김해시 진례면 고모로 280</span>
                                 </div>
                                 <div class="farm-button">
-                                    <button class="btn btn-success btn-outline"><i class="fa fa-edit"></i> 수정</button>
-                                    <button class="btn btn-danger btn-outline"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-success btn-outline modalCall" data-target="#modifyUser"><i class="fa fa-edit"></i> 수정</button>
+                                    <button class="btn btn-danger btn-outline modalCall" data-target="#deleteUser"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-primary btn-outline modalCall" data-target="#addDevice"><i class="fa fa-plus"></i> 단말기추가</button>
                                 </div>
                                 <div class="farm-device">
                                     <label class="farm-device-label">등록장비</label>
@@ -1289,9 +1309,10 @@
                                 <div class="card" onclick="location.href='rmfarm_user_detail.html'">
                                     <div class="card-header">
                                         <div class="list-header">
-                                            <!--<span class="badge badge-primary">알엠팜</span>-->
+                                            <input type="checkbox">
                                             <span class="badge badge-success">ON</span>
                                             <label>토마토1</label>
+                                            <strong>보급형</strong>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -1343,22 +1364,23 @@
                         </div>
                     </div>
                     <div class="user-group">
-                        <label class="user-name">
+                        <div class="user-name">
                             <strong>영주 이현주</strong>
+                            <button class="btn btn-primary btn-outline modalCall" data-target="#addAgent"><i class="fa fa-plus"></i> 에이전트 추가</button>
                             <span class="farm-folding"><i class="fa fa-chevron-up"></i></span>
-                        </label>
+                        </div>
                         <div class="farm-group">
                             <div class="farm-group-header">
                                 <div class="farm-info">
-                                    <input type="checkbox">
                                     <span class="number">228</span>
                                     <label class="farm-name">영주 이현주</label>
                                     <strong class="farm-number">01090508084</strong>
                                     <span class="farm-address">경상북도 영주시 이산면 신천리 218</span>
                                 </div>
                                 <div class="farm-button">
-                                    <button class="btn btn-success btn-outline"><i class="fa fa-edit"></i> 수정</button>
-                                    <button class="btn btn-danger btn-outline"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-success btn-outline modalCall" data-target="#modifyUser"><i class="fa fa-edit"></i> 수정</button>
+                                    <button class="btn btn-danger btn-outline modalCall" data-target="#deleteUser"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-primary btn-outline modalCall" data-target="#addDevice"><i class="fa fa-plus"></i> 단말기추가</button>
                                 </div>
                                 <div class="farm-device">
                                     <label class="farm-device-label">등록장비</label>
@@ -1370,9 +1392,10 @@
                                 <div class="card" onclick="location.href='rmfarm_user_detail.html'">
                                     <div class="card-header">
                                         <div class="list-header">
-                                            <!--<span class="badge badge-primary">알엠팜</span>-->
+                                            <input type="checkbox">
                                             <span class="badge badge-success">ON</span>
                                             <label>토마토1</label>
+                                            <strong>보급형</strong>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -1424,22 +1447,23 @@
                         </div>
                     </div>
                     <div class="user-group">
-                        <label class="user-name">
+                        <div class="user-name">
                             <strong>영주 서호석 </strong>
+                            <button class="btn btn-primary btn-outline modalCall" data-target="#addAgent"><i class="fa fa-plus"></i> 에이전트 추가</button>
                             <span class="farm-folding"><i class="fa fa-chevron-up"></i></span>
-                        </label>
+                        </div>
                         <div class="farm-group">
                             <div class="farm-group-header">
                                 <div class="farm-info">
-                                    <input type="checkbox">
                                     <span class="number">227</span>
                                     <label class="farm-name">영주 서호석 </label>
                                     <strong class="farm-number">01036906349</strong>
                                     <span class="farm-address">경상북도 영주시 단산면 구구리 1016</span>
                                 </div>
                                 <div class="farm-button">
-                                    <button class="btn btn-success btn-outline"><i class="fa fa-edit"></i> 수정</button>
-                                    <button class="btn btn-danger btn-outline"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-success btn-outline modalCall" data-target="#modifyUser"><i class="fa fa-edit"></i> 수정</button>
+                                    <button class="btn btn-danger btn-outline modalCall" data-target="#deleteUser"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-primary btn-outline modalCall" data-target="#addDevice"><i class="fa fa-plus"></i> 단말기추가</button>
                                 </div>
                                 <div class="farm-device">
                                     <label class="farm-device-label">등록장비</label>
@@ -1451,9 +1475,10 @@
                                 <div class="card" onclick="location.href='rmfarm_user_detail.html'">
                                     <div class="card-header">
                                         <div class="list-header">
-                                            <!--<span class="badge badge-primary">알엠팜</span>-->
+                                            <input type="checkbox">
                                             <span class="badge badge-success">ON</span>
                                             <label>토마토1</label>
+                                            <strong>보급형</strong>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -1505,22 +1530,23 @@
                         </div>
                     </div>
                     <div class="user-group">
-                        <label class="user-name">
+                        <div class="user-name">
                             <strong>디지틀랩</strong>
+                            <button class="btn btn-primary btn-outline modalCall" data-target="#addAgent"><i class="fa fa-plus"></i> 에이전트 추가</button>
                             <span class="farm-folding"><i class="fa fa-chevron-up"></i></span>
-                        </label>
+                        </div>
                         <div class="farm-group">
                             <div class="farm-group-header">
                                 <div class="farm-info">
-                                    <input type="checkbox">
                                     <span class="number">226</span>
                                     <label class="farm-name">디지틀랩 </label>
                                     <strong class="farm-number">01012345678</strong>
                                     <span class="farm-address">서울특별시 중구 을지로동 77-12</span>
                                 </div>
                                 <div class="farm-button">
-                                    <button class="btn btn-success btn-outline"><i class="fa fa-edit"></i> 수정</button>
-                                    <button class="btn btn-danger btn-outline"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-success btn-outline modalCall" data-target="#modifyUser"><i class="fa fa-edit"></i> 수정</button>
+                                    <button class="btn btn-danger btn-outline modalCall" data-target="#deleteUser"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-primary btn-outline modalCall" data-target="#addDevice"><i class="fa fa-plus"></i> 단말기추가</button>
                                 </div>
                                 <div class="farm-device">
                                     <label class="farm-device-label">등록장비</label>
@@ -1532,9 +1558,10 @@
                                 <div class="card" onclick="location.href='rmfarm_user_detail.html'">
                                     <div class="card-header">
                                         <div class="list-header">
-                                            <!--<span class="badge badge-primary">알엠팜</span>-->
+                                            <input type="checkbox">
                                             <span class="badge badge-success">ON</span>
                                             <label>토마토1</label>
+                                            <strong>보급형</strong>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -1586,22 +1613,23 @@
                         </div>
                     </div>
                     <div class="user-group">
-                        <label class="user-name">
+                        <div class="user-name">
                             <strong>춘천 심명섭</strong>
+                            <button class="btn btn-primary btn-outline modalCall" data-target="#addAgent"><i class="fa fa-plus"></i> 에이전트 추가</button>
                             <span class="farm-folding"><i class="fa fa-chevron-up"></i></span>
-                        </label>
+                        </div>
                         <div class="farm-group">
                             <div class="farm-group-header">
                                 <div class="farm-info">
-                                    <input type="checkbox">
                                     <span class="number">225</span>
                                     <label class="farm-name">춘천 심명섭</label>
                                     <strong class="farm-number">01034065909</strong>
                                     <span class="farm-address">강원도 춘천시 신북읍 발산리 437</span>
                                 </div>
                                 <div class="farm-button">
-                                    <button class="btn btn-success btn-outline"><i class="fa fa-edit"></i> 수정</button>
-                                    <button class="btn btn-danger btn-outline"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-success btn-outline modalCall" data-target="#modifyUser"><i class="fa fa-edit"></i> 수정</button>
+                                    <button class="btn btn-danger btn-outline modalCall" data-target="#deleteUser"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-primary btn-outline modalCall" data-target="#addDevice"><i class="fa fa-plus"></i> 단말기추가</button>
                                 </div>
                                 <div class="farm-device">
                                     <label class="farm-device-label">등록장비</label>
@@ -1613,9 +1641,10 @@
                                 <div class="card" onclick="location.href='rmfarm_user_detail.html'">
                                     <div class="card-header">
                                         <div class="list-header">
-                                            <!--<span class="badge badge-primary">알엠팜</span>-->
+                                            <input type="checkbox">
                                             <span class="badge badge-success">ON</span>
                                             <label>토마토1</label>
+                                            <strong>보급형</strong>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -1667,22 +1696,23 @@
                         </div>
                     </div>
                     <div class="user-group">
-                        <label class="user-name">
+                        <div class="user-name">
                             <strong>진주 권동아 </strong>
+                            <button class="btn btn-primary btn-outline modalCall" data-target="#addAgent"><i class="fa fa-plus"></i> 에이전트 추가</button>
                             <span class="farm-folding"><i class="fa fa-chevron-up"></i></span>
-                        </label>
+                        </div>
                         <div class="farm-group">
                             <div class="farm-group-header">
                                 <div class="farm-info">
-                                    <input type="checkbox">
                                     <span class="number">224</span>
                                     <label class="farm-name">진주 권동아 </label>
                                     <strong class="farm-number">01097781531</strong>
                                     <span class="farm-address">경상남도 진주시 대곡면 와룡리 1173-15</span>
                                 </div>
                                 <div class="farm-button">
-                                    <button class="btn btn-success btn-outline"><i class="fa fa-edit"></i> 수정</button>
-                                    <button class="btn btn-danger btn-outline"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-success btn-outline modalCall" data-target="#modifyUser"><i class="fa fa-edit"></i> 수정</button>
+                                    <button class="btn btn-danger btn-outline modalCall" data-target="#deleteUser"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-primary btn-outline modalCall" data-target="#addDevice"><i class="fa fa-plus"></i> 단말기추가</button>
                                 </div>
                                 <div class="farm-device">
                                     <label class="farm-device-label">등록장비</label>
@@ -1694,9 +1724,10 @@
                                 <div class="card" onclick="location.href='rmfarm_user_detail.html'">
                                     <div class="card-header">
                                         <div class="list-header">
-                                            <!--<span class="badge badge-primary">알엠팜</span>-->
+                                            <input type="checkbox">
                                             <span class="badge badge-success">ON</span>
                                             <label>토마토1</label>
+                                            <strong>보급형</strong>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -1748,22 +1779,23 @@
                         </div>
                     </div>
                     <div class="user-group">
-                        <label class="user-name">
+                        <div class="user-name">
                             <strong>남원 이태성 </strong>
+                            <button class="btn btn-primary btn-outline modalCall" data-target="#addAgent"><i class="fa fa-plus"></i> 에이전트 추가</button>
                             <span class="farm-folding"><i class="fa fa-chevron-up"></i></span>
-                        </label>
+                        </div>
                         <div class="farm-group">
                             <div class="farm-group-header">
                                 <div class="farm-info">
-                                    <input type="checkbox">
                                     <span class="number">223</span>
                                     <label class="farm-name">남원 이태성 </label>
                                     <strong class="farm-number">01033184640</strong>
                                     <span class="farm-address">전라북도 남원시 운봉읍 산덕리 1260-15</span>
                                 </div>
                                 <div class="farm-button">
-                                    <button class="btn btn-success btn-outline"><i class="fa fa-edit"></i> 수정</button>
-                                    <button class="btn btn-danger btn-outline"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-success btn-outline modalCall" data-target="#modifyUser"><i class="fa fa-edit"></i> 수정</button>
+                                    <button class="btn btn-danger btn-outline modalCall" data-target="#deleteUser"><i class="fa fa-times"></i> 삭제</button>
+                                    <button class="btn btn-primary btn-outline modalCall" data-target="#addDevice"><i class="fa fa-plus"></i> 단말기추가</button>
                                 </div>
                                 <div class="farm-device">
                                     <label class="farm-device-label">등록장비</label>
@@ -1775,9 +1807,10 @@
                                 <div class="card" onclick="location.href='rmfarm_user_detail.html'">
                                     <div class="card-header">
                                         <div class="list-header">
-                                            <!--<span class="badge badge-primary">알엠팜</span>-->
+                                            <input type="checkbox">
                                             <span class="badge badge-success">ON</span>
                                             <label>토마토1</label>
+                                            <strong>보급형</strong>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -1917,23 +1950,75 @@
 </div>
 
 
+
+<!-- modal 에이전트 추가 -->
+<div class="modal" id="addAgent">
+    <div class="modal-dialog modal-middle">
+        <div class="modal-header">
+            <h3>에이전트 추가</h3>
+            <span class="modal-close"></span>
+        </div>
+        <div class="modal-body">
+            <div class="form-vertical" style="padding:1rem 0;">
+                <div class="form-group">
+                    <label class="control-label col-2">농장명</label>
+                    <div class="col-9 d-flex">
+                        <input type="text" class="form-control" style="width:calc(100% - 6.2rem);margin-right:.2rem;">
+                        <button class="btn btn-info" style="width:6rem;"><i class="fa fa-check"></i> 추가</button>
+                    </div>
+                </div>
+            </div>
+            <table class="table-vertical">
+                <colgroup>
+                    <col width="10%">
+                    <col width="*">
+                    <col width="30%">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>No</th>
+                    <th>농장명</th>
+                    <th>삭제</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>농장 A</td>
+                    <td><button class="btn btn-danger btn-outline"><i class="fa fa-minus"></i> 삭제</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>농장 B</td>
+                    <td><button class="btn btn-danger btn-outline"><i class="fa fa-minus"></i> 삭제</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>농장 C</td>
+                    <td><button class="btn btn-danger btn-outline"><i class="fa fa-minus"></i> 삭제</button></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-default modal-close"><i class="fa fa-times"></i> 취소</button>
+            <button class="btn btn-primary"><i class="fa fa-check"></i> 확인</button>
+        </div>
+    </div>
+</div>
+
 <!-- modal 단말기 추가 -->
 <div class="modal" id="addDevice">
-    <div class="modal-dialog modal-middle">
+    <div class="modal-dialog modal-large">
         <div class="modal-header">
             <h3>단말기등록</h3>
             <span class="modal-close"></span>
         </div>
         <div class="modal-body">
-            <div class="form-vertical">
-                <div class="form-group">
-                    <label class="control-label col-4"><span class="text-danger">*</span> 서비스</label>
-                    <div class="col-8 half">
-                        <select class="form-control">
-                            <option>파밍온</option>
-                            <option>파밍온2</option>
-                            <option>알엠팜</option>
-                        </select>
+            <div class="form-vertical d-flex flex-wrap">
+                <div class="form-group col-6">
+                    <label class="control-label col-4"><span class="text-danger">*</span> 장비종류</label>
+                    <div class="col-8">
                         <select class="form-control">
                             <option>보급형</option>
                             <option>기본형</option>
@@ -1941,41 +2026,86 @@
                         </select>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label class="control-label col-4"><span class="text-danger">*</span> 단말번호(전화번호)</label>
+                <div class="form-group col-6">
+                    <label class="control-label col-4"><span class="text-danger">*</span> 장비아이디</label>
                     <div class="col-8 overCheck">
                         <input type="text" class="form-control">
                         <button class="btn btn-primary btn-outline"><i class="fa fa-check"></i> 중복확인</button>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label class="control-label col-4">단말설명</label>
-                    <div class="col-8">
-                        <input type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-4"><span class="text-danger">*</span> 주소입력</label>
+                <div class="form-group col-6">
+                    <label class="control-label col-4"><span class="text-danger">*</span> 장비이름</label>
                     <div class="col-8 overCheck">
                         <input type="text" class="form-control">
-                        <button class="btn btn-primary btn-outline modalCall" data-target="#deviceLocation"><i class="fa fa-search"></i> 주소찾기</button>
+                        <button class="btn btn-primary btn-outline"><i class="fa fa-check"></i> 중복확인</button>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label class="control-label col-4">CO2 센서유무</label>
-                    <div class="col-8">
-                        <label><input type="radio" name="group1" checked> 유</label>
-                        <label><input type="radio" name="group1"> 무</label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-4">단말배지센서 개수</label>
+                <div class="form-group col-6">
+                    <label class="control-label col-4">컴포트</label>
                     <div class="col-8">
                         <select class="form-control">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
+                            <option>OFF</option>
+                            <option>ON</option>
                         </select>
+                    </div>
+                </div>
+                <div class="form-group col-6">
+                    <label class="control-label col-4"><span class="text-danger">*</span> 실행 미들웨어</label>
+                    <div class="col-8 overCheck">
+                        <select class="form-control">
+                            <option>OFF</option>
+                            <option>ON</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group col-6">
+                    <label class="control-label col-4">운영상태</label>
+                    <div class="col-8">
+                        <select class="form-control">
+                            <option></option>
+                            <option></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group col-6">
+                    <label class="control-label col-4">노즐 개수</label>
+                    <div class="col-8">
+                        <input type="text" class="form-control" value="5">
+                    </div>
+                </div>
+                <div class="form-group col-6">
+                    <label class="control-label col-4">투입기준</label>
+                    <div class="col-8">
+                        <input type="text" class="form-control" value="5">
+                    </div>
+                </div>
+                <div class="form-group col-6">
+                    <label class="control-label col-4">배출기준</label>
+                    <div class="col-8">
+                        <input type="text" class="form-control" value="5">
+                    </div>
+                </div>
+                <div class="form-group col-6">
+                    <label class="control-label col-4">양액자동설정</label>
+                    <div class="col-8">
+                        <select class="form-control">
+                            <option>OFF</option>
+                            <option>ON</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group col-6">
+                    <label class="control-label col-4">작물이름</label>
+                    <div class="col-8">
+                        <select class="form-control">
+                            <option>없음</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group col-6">
+                    <label class="control-label col-4">광량옵셋</label>
+                    <div class="col-8">
+                        <input type="text" class="form-control" value="0">
                     </div>
                 </div>
             </div>

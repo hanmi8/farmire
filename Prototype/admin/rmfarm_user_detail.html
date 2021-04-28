@@ -31,7 +31,6 @@
             <li><a href="rmfarm_data.html"><i class="fa fa-cloud-upload-alt"></i> 데이터전송현황</a></li>
             <li><a href="rmfarm_monitoring.html"><i class="fa fa-desktop"></i> 단말모니터링</a></li>
             <li><a href="rmfarm_ordering.html"><i class="fa fa-keyboard"></i> 명령어보내기</a></li>
-            <li><a href="rmfarm_app.html"><i class="fa fa-mobile-alt"></i> 앱사용현황</a></li>
         </ul>
     </div>
     <div class="container on admin">
@@ -41,6 +40,7 @@
             </div>
             <div class="menu-right">
                 <ul class="common-menu">
+                    <li><a href="app.html"><i class="fa fa-mobile-alt"></i> 앱사용현황</a></li>
                     <li><a href="notice.html"><i class="fa fa-bullhorn"></i> 게시판관리</a></li>
                     <li><a href="password.html"><i class="fa fa-key"></i> 비밀번호변경</a></li>
                 </ul>
@@ -170,119 +170,103 @@
                         </section>
                         <section>
                             <h3>현재 측정값(2021-03-25 15:46:00) <a href="#" class="sync"><i class="fa fa-sync-alt"></i></a></h3>
-                            <ul class="readingWrap row">
+                            <ul class="readingWrap row rmfarm">
                                 <li class="col-4">
                                     <div class="reading">
-                                        <div class="col-2">
-                                            <label>무게</label>
-                                        </div>
-                                        <div class="col-5">&nbsp;</div>
-                                        <div class="col-5">
-                                            <div class="number">
+                                        <label>무게</label>
+                                        <ul class="number">
+                                            <li>
                                                 <i class="fa fa-caret-up text-danger"></i>
                                                 <strong>12.96kg</strong>
-                                            </div>
-                                            <div class="number">
+                                            </li>
+                                            <li>
                                                 <i class="fa fa-caret-down text-success"></i>
                                                 <strong>12.56kg</strong>
-                                            </div>
-                                        </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </li>
                                 <li class="col-4">
                                     <div class="reading">
-                                        <div class="col-2">
-                                            <label>온도</label>
-                                        </div>
-                                        <div class="col-5 average">
+                                        <label>온도</label>
+                                        <div class="average">
                                             <label>평균값</label>
                                             <strong>14.44℃</strong>
                                         </div>
-                                        <div class="col-5">
-                                            <div class="number">
+                                        <ul class="number">
+                                            <li>
                                                 <i class="fa fa-caret-up text-danger"></i>
                                                 <strong>18.08℃</strong>
-                                            </div>
-                                            <div class="number">
+                                            </li>
+                                            <li>
                                                 <i class="fa fa-caret-down text-success"></i>
                                                 <strong>12.18℃</strong>
-                                            </div>
-                                        </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </li>
                                 <li class="col-4">
                                     <div class="reading">
-                                        <div class="col-2">
-                                            <label>습도</label>
-                                        </div>
-                                        <div class="col-5 average">
+                                        <label>습도</label>
+                                        <div class="average">
                                             <label>평균값</label>
                                             <strong>90.48%</strong>
                                         </div>
-                                        <div class="col-5">
-                                            <div class="number">
+                                        <ul class="number">
+                                            <li>
                                                 <i class="fa fa-caret-up text-danger"></i>
                                                 <strong>97.31%</strong>
-                                            </div>
-                                            <div class="number">
+                                            </li>
+                                            <li>
                                                 <i class="fa fa-caret-down text-success"></i>
                                                 <strong>41.23%</strong>
-                                            </div>
-                                        </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </li>
                                 <li class="col-4">
                                     <div class="reading">
-                                        <div class="col-2">
-                                            <label>EC</label>
-                                        </div>
-                                        <div class="col-5"></div>
-                                        <div class="col-5">
-                                            <div class="number">
+                                        <label>EC</label>
+                                        <ul class="number">
+                                            <li>
                                                 <i class="fa fa-caret-up text-danger"></i>
                                                 <strong>2.01mS/cm</strong>
-                                            </div>
-                                            <div class="number">
+                                            </li>
+                                            <li>
                                                 <i class="fa fa-caret-down text-success"></i>
                                                 <strong>1.87mS/cm</strong>
-                                            </div>
-                                        </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </li>
                                 <li class="col-4">
                                     <div class="reading">
-                                        <div class="col-2">
-                                            <label>배지온도</label>
-                                        </div>
-                                        <div class="col-5"></div>
-                                        <div class="col-5">
-                                            <div class="number">
+                                        <label>배지온도</label>
+                                        <ul class="number">
+                                            <li>
                                                 <i class="fa fa-caret-up text-danger"></i>
                                                 <strong>15.75℃</strong>
-                                            </div>
-                                            <div class="number">
+                                            </li>
+                                            <li>
                                                 <i class="fa fa-caret-down text-success"></i>
                                                 <strong>14.29℃</strong>
-                                            </div>
-                                        </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </li>
                                 <li class="col-4">
                                     <div class="reading">
-                                        <div class="col-2">
-                                            <label>pH</label>
-                                        </div>
-                                        <div class="col-5"></div>
-                                        <div class="col-5">
-                                            <div class="number">
+                                        <label>pH</label>
+                                        <ul class="number">
+                                            <li>
                                                 <i class="fa fa-caret-up text-danger"></i>
                                                 <strong>6.42</strong>
-                                            </div>
-                                            <div class="number">
+                                            </li>
+                                            <li>
                                                 <i class="fa fa-caret-down text-success"></i>
                                                 <strong>6.19</strong>
-                                            </div>
-                                        </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </li>
                             </ul>

@@ -29,7 +29,6 @@
             <li class="on"><a href="farmingon2_user.html"><i class="fa fa-user"></i> 사용자관리</a></li>
             <li><a href="farmingon2_monitoring.html"><i class="fa fa-desktop"></i> 단말모니터링</a></li>
             <li><a href="farmingon2_alert.html"><i class="fa fa-bell"></i> 알림현황</a></li>
-            <li><a href="farmingon2_app.html"><i class="fa fa-mobile-alt"></i> 앱사용현황</a></li>
         </ul>
     </div>
     <div class="container on">
@@ -39,6 +38,7 @@
             </div>
             <div class="menu-right">
                 <ul class="common-menu">
+                    <li><a href="app.html"><i class="fa fa-mobile-alt"></i> 앱사용현황</a></li>
                     <li><a href="notice.html"><i class="fa fa-bullhorn"></i> 게시판관리</a></li>
                     <li><a href="password.html"><i class="fa fa-key"></i> 비밀번호변경</a></li>
                 </ul>
@@ -101,93 +101,93 @@
             </section>
             <section>
                 <h3>단말 알림설정 값</h3>
-                <ul class="readingWrap setting row">
-                    <li>
+                <ul class="min-max-wrap">
+                    <li class="col-3">
                         <div class="reading">
                             <label>온도</label>
-                            <div class="number">
+                            <div class="min-max">
                                 <i class="fa fa-caret-up text-danger"></i>
                                 <strong>25.00℃</strong>
                             </div>
-                            <div class="number">
+                            <div class="min-max">
                                 <i class="fa fa-caret-down text-success"></i>
                                 <strong>10.00℃</strong>
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="col-3">
                         <div class="reading">
                             <label>습도</label>
-                            <div class="number">
+                            <div class="min-max">
                                 <i class="fa fa-caret-up text-danger"></i>
                                 <strong>80.00%</strong>
                             </div>
-                            <div class="number">
+                            <div class="min-max">
                                 <i class="fa fa-caret-down text-success"></i>
                                 <strong>30.00%</strong>
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="col-3">
                         <div class="reading">
                             <label>CO2</label>
-                            <div class="number">
+                            <div class="min-max">
                                 <i class="fa fa-caret-up text-danger"></i>
                                 <strong>2000ppm</strong>
                             </div>
-                            <div class="number">
+                            <div class="min-max">
                                 <i class="fa fa-caret-down text-success"></i>
                                 <strong>200ppm</strong>
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="col-3">
                         <div class="reading">
                             <label>pH</label>
-                            <div class="number">
+                            <div class="min-max">
                                 <i class="fa fa-caret-up text-danger"></i>
                                 <strong>7.00</strong>
                             </div>
-                            <div class="number">
+                            <div class="min-max">
                                 <i class="fa fa-caret-down text-success"></i>
                                 <strong>2.00</strong>
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="col-3">
                         <div class="reading">
                             <label>배지온도</label>
-                            <div class="number">
+                            <div class="min-max">
                                 <i class="fa fa-caret-up text-danger"></i>
                                 <strong>25.00℃</strong>
                             </div>
-                            <div class="number">
+                            <div class="min-max">
                                 <i class="fa fa-caret-down text-success"></i>
                                 <strong>25.00℃</strong>
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="col-3">
                         <div class="reading">
                             <label>배지습도</label>
-                            <div class="number">
+                            <div class="min-max">
                                 <i class="fa fa-caret-up text-danger"></i>
                                 <strong>70.00%</strong>
                             </div>
-                            <div class="number">
+                            <div class="min-max">
                                 <i class="fa fa-caret-down text-success"></i>
                                 <strong>20.00%</strong>
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="col-3">
                         <div class="reading">
                             <label>배지EC</label>
-                            <div class="number">
+                            <div class="min-max">
                                 <i class="fa fa-caret-up text-danger"></i>
                                 <strong>5.00ms/cm</strong>
                             </div>
-                            <div class="number">
+                            <div class="min-max">
                                 <i class="fa fa-caret-down text-success"></i>
                                 <strong>0.00ms/cm</strong>
                             </div>
@@ -261,7 +261,7 @@
                                 <div class="reading">
                                     <label>온도</label>
                                     <span class="icon icon-tem"></span>
-                                    <div class="number">
+                                    <div class="min-max">
                                         <strong>39.72℃</strong>
                                     </div>
                                 </div>
@@ -270,7 +270,7 @@
                                 <div class="reading">
                                     <label>습도</label>
                                     <span class="icon icon-humidity"></span>
-                                    <div class="number">
+                                    <div class="min-max">
                                         <strong>50.46%</strong>
                                     </div>
                                 </div>
@@ -279,7 +279,7 @@
                                 <div class="reading">
                                     <label>CO2</label>
                                     <span class="icon icon-co2"></span>
-                                    <div class="number">
+                                    <div class="min-max">
                                         <strong>306.00ppm</strong>
                                     </div>
                                 </div>
@@ -288,7 +288,7 @@
                                 <div class="reading">
                                     <label>광량</label>
                                     <span class="icon icon-lux"></span>
-                                    <div class="number">
+                                    <div class="min-max">
                                         <strong>6897.00lux</strong>
                                     </div>
                                 </div>
@@ -297,7 +297,7 @@
                                 <div class="reading">
                                     <label>pH</label>
                                     <span class="icon icon-ph"></span>
-                                    <div class="number">
+                                    <div class="min-max">
                                         <strong>5.80</strong>
                                     </div>
                                 </div>
@@ -306,7 +306,7 @@
                                 <div class="reading">
                                     <label>배지평균온도</label>
                                     <span class="icon icon-ground-tem"></span>
-                                    <div class="number">
+                                    <div class="min-max">
                                         <strong>17.27℃</strong>
                                     </div>
                                 </div>
@@ -315,7 +315,7 @@
                                 <div class="reading">
                                     <label>배지평균습도</label>
                                     <span class="icon icon-ground-humidity"></span>
-                                    <div class="number">
+                                    <div class="min-max">
                                         <strong>32.40%</strong>
                                     </div>
                                 </div>
@@ -324,7 +324,7 @@
                                 <div class="reading">
                                     <label>배지평균EC</label>
                                     <span class="icon icon-ground-ec"></span>
-                                    <div class="number">
+                                    <div class="min-max">
                                         <strong>1.86ms/cm</strong>
                                     </div>
                                 </div>
@@ -333,7 +333,7 @@
                                 <div class="reading">
                                     <label>이슬점</label>
                                     <span class="icon icon-dew"></span>
-                                    <div class="number">
+                                    <div class="min-max">
                                         <strong>27.5℃<span>(오차율 ±0.35℃)</span></strong>
                                     </div>
                                 </div>
@@ -342,7 +342,7 @@
                                 <div class="reading">
                                     <label>수분부족량</label>
                                     <span class="icon icon-drought"></span>
-                                    <div class="number">
+                                    <div class="min-max">
                                         <strong>25.35g/㎥</strong>
                                     </div>
                                 </div>
@@ -361,7 +361,6 @@
                                 </select>
                                 <input type="text" class="form-control" value="2021-01-16">
                                 <button class="btn btn-primary"><i class="fa fa-search"></i> 검색</button>
-                                <button class="btn btn-primary"><i class="fa fa-file-excel"></i> 엑셀저장</button>
                             </div>
                             <ul class="tabs depth-second">
                                 <li class="on"><a href="#tab02-1">CO2/온도/습도/광량</a></li>
@@ -379,7 +378,8 @@
                             </div>
                         </div>
                         <div class="tab-contents" id="tabText02">
-                            <div class="table-responsive">
+                            <button class="btn btn-primary"><i class="fa fa-file-excel"></i> 엑셀저장</button>
+                            <div class="table-responsive mt-20">
                                 <table class="table-vertical">
                                     <thead>
                                     <tr>
@@ -580,7 +580,7 @@
                             <li class="col-4">
                                 <div class="reading">
                                     <label>배지온도</label>
-                                    <div class="number">
+                                    <div class="min-max">
                                         <strong>18.05℃</strong>
                                     </div>
                                 </div>
@@ -588,7 +588,7 @@
                             <li class="col-4">
                                 <div class="reading">
                                     <label>배지습도</label>
-                                    <div class="number">
+                                    <div class="min-max">
                                         <strong>11.37%</strong>
                                     </div>
                                 </div>
@@ -596,7 +596,7 @@
                             <li class="col-4">
                                 <div class="reading">
                                     <label>배지EC</label>
-                                    <div class="number">
+                                    <div class="min-max">
                                         <strong>2.90ms/cm</strong>
                                     </div>
                                 </div>

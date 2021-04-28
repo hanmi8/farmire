@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Farmire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../asset/common/css/reset.css">
     <link rel="stylesheet" href="../asset/common/css/all.css">
     <link rel="stylesheet" href="../asset/common/css/font.css">
@@ -30,7 +31,7 @@
             <li><a href="farmingon2_alert.html"><i class="fa fa-desktop"></i> 알림현황</a></li>
         </ul>
     </div>
-    <div class="container on">
+    <div class="container on mypage side-page">
         <div class="container-header">
             <div class="nav-folding">
                 <a href="#"><i class="fa fa-bars"></i></a>
@@ -40,15 +41,19 @@
                     <li><a href="notice.html"><i class="fa fa-bullhorn"></i> 공지사항</a></li>
                     <li><a href="mypage.html"><i class="fa fa-key"></i> 마이페이지</a></li>
                 </ul>
-                <div class="userInfo"><strong>고흥 류춘삼님</strong><a href="#">로그아웃 <i class="fa fa-sign-out-alt"></i></a></div>
+                <div class="userInfo"><a href="mypage.html" class="user">고흥 류춘삼님</a><a href="#">로그아웃 <i class="fa fa-sign-out-alt"></i></a></div>
             </div>
         </div>
         <div class="container-body">
-            <h2>마이페이지</h2>
+            <h2 class="wide">마이페이지</h2>
+            <div class="app-header mobile">
+                <a href="javascript:history.back()" class="back"><i class="fa fa-chevron-left"></i></a>
+                <label>마이페이지</label>
+            </div>
             <section>
                 <h3>사용자 정보</h3>
                 <div class="card">
-                    <div class="form-horizontal">
+                    <div class="form-horizontal user-info-summary">
                         <div class="d-flex flex-wrap">
                             <div class="form-group col-6">
                                 <label class="control-label col-4">아이디</label>
@@ -87,7 +92,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="device-info">
                 <h3>단말 정보</h3>
                 <div class="card">
                     <div class="table-responsive">
@@ -109,7 +114,7 @@
                                 <td>임계농장</td>
                                 <td>임계농장</td>
                                 <td>강원도 정선군 임계면 용산리 677</td>
-                                <td><button class="btn btn-primary btn-outline"><i class="fa fa-edit"></i> 수정</button></td>
+                                <td><button class="btn btn-primary btn-outline modalCall" data-target="#deviceModify"><i class="fa fa-edit"></i> 수정</button></td>
                             </tr>
                             <tr>
                                 <td>7</td>
@@ -117,7 +122,7 @@
                                 <td>임계농장</td>
                                 <td>임계농장</td>
                                 <td>강원도 정선군 임계면 용산리 677</td>
-                                <td><button class="btn btn-primary btn-outline"><i class="fa fa-edit"></i> 수정</button></td>
+                                <td><button class="btn btn-primary btn-outline modalCall" data-target="#deviceModify"><i class="fa fa-edit"></i> 수정</button></td>
                             </tr>
                             <tr>
                                 <td>6</td>
@@ -125,7 +130,7 @@
                                 <td>임계농장</td>
                                 <td>임계농장</td>
                                 <td>강원도 정선군 임계면 용산리 677</td>
-                                <td><button class="btn btn-primary btn-outline"><i class="fa fa-edit"></i> 수정</button></td>
+                                <td><button class="btn btn-primary btn-outline modalCall" data-target="#deviceModify"><i class="fa fa-edit"></i> 수정</button></td>
                             </tr>
                             <tr>
                                 <td>5</td>
@@ -133,7 +138,7 @@
                                 <td>01296327412</td>
                                 <td>01296327412</td>
                                 <td>강원도 정선군 임계면 용산리 677</td>
-                                <td><button class="btn btn-primary btn-outline"><i class="fa fa-edit"></i> 수정</button></td>
+                                <td><button class="btn btn-primary btn-outline modalCall" data-target="#deviceModify"><i class="fa fa-edit"></i> 수정</button></td>
                             </tr>
                             <tr>
                                 <td>4</td>
@@ -141,7 +146,7 @@
                                 <td>01236521452</td>
                                 <td>01236521452</td>
                                 <td>강원도 정선군 임계면 용산리 677</td>
-                                <td><button class="btn btn-primary btn-outline"><i class="fa fa-edit"></i> 수정</button></td>
+                                <td><button class="btn btn-primary btn-outline modalCall" data-target="#deviceModify"><i class="fa fa-edit"></i> 수정</button></td>
                             </tr>
                             <tr>
                                 <td>3</td>
@@ -149,7 +154,7 @@
                                 <td>01296587458</td>
                                 <td>01296587458</td>
                                 <td>강원도 정선군 임계면 용산리 677</td>
-                                <td><button class="btn btn-primary btn-outline"><i class="fa fa-edit"></i> 수정</button></td>
+                                <td><button class="btn btn-primary btn-outline modalCall" data-target="#deviceModify"><i class="fa fa-edit"></i> 수정</button></td>
                             </tr>
                             <tr>
                                 <td>2</td>
@@ -157,7 +162,7 @@
                                 <td>01225248596</td>
                                 <td>01225248596</td>
                                 <td>강원도 정선군 임계면 용산리 677</td>
-                                <td><button class="btn btn-primary btn-outline"><i class="fa fa-edit"></i> 수정</button></td>
+                                <td><button class="btn btn-primary btn-outline modalCall" data-target="#deviceModify"><i class="fa fa-edit"></i> 수정</button></td>
                             </tr>
                             <tr>
                                 <td>1</td>
@@ -165,7 +170,7 @@
                                 <td>01256458978</td>
                                 <td>01256458978</td>
                                 <td>강원도 정선군 임계면 용산리 677</td>
-                                <td><button class="btn btn-primary btn-outline"><i class="fa fa-edit"></i> 수정</button></td>
+                                <td><button class="btn btn-primary btn-outline modalCall" data-target="#deviceModify"><i class="fa fa-edit"></i> 수정</button></td>
                             </tr>
                             </tbody>
                         </table>
@@ -174,7 +179,7 @@
             </section>
             <section>
                 <h3>비밀번호 변경</h3>
-                <div class="card">
+                <div class="card password-change">
                     <div class="form-horizontal">
                         <div class="d-flex flex-wrap">
                             <div class="form-group col-12">
@@ -205,6 +210,39 @@
         </div>
     </div>
 </div>
+
+
+<!-- modal 단말기 수정 -->
+<div class="modal" id="deviceModify">
+    <div class="modal-dialog modal-middle">
+        <div class="modal-header">
+            <h3>단말기 정보 수정</h3>
+            <span class="modal-close"></span>
+        </div>
+        <div class="modal-body">
+            <div class="form-vertical">
+                <div class="form-group">
+                    <label class="control-label col-4">단말설명</label>
+                    <div class="col-8">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-4"><span class="text-danger">*</span> 주소입력</label>
+                    <div class="col-8 overCheck">
+                        <input type="text" class="form-control">
+                        <button class="btn btn-primary btn-outline modalCall" data-target="#deviceLocation"><i class="fa fa-search"></i> 주소찾기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-default modal-close"><i class="fa fa-times"></i> 취소</button>
+            <button class="btn btn-primary"><i class="fa fa-check"></i> 확인</button>
+        </div>
+    </div>
+</div>
+
 
 </body>
 </html>

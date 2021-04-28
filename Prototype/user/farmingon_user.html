@@ -14,6 +14,17 @@
     <script type="text/javascript" src="../asset/common/js/jquery.js"></script>
     <script type="text/javascript" src="../asset/common/js/common.js"></script>
     <script type="text/javascript" src="../asset/common/js/jquery.bxslider.js"></script>
+    <script>
+        $(function(){
+            $('.card.farm').click(function(){
+                if($(window).width() > 768){
+                    location.href="farmingon_user_detail.html"
+                }else{
+                    location.href="app_farmingon_detailTable.html"
+                }
+            })
+        })
+    </script>
 </head>
 <body>
 <div class="wrapper">
@@ -55,7 +66,7 @@
                     <li><a href="notice.html"><i class="fa fa-bullhorn"></i> 공지사항</a></li>
                     <li><a href="mypage.html"><i class="fa fa-key"></i> 마이페이지</a></li>
                 </ul>
-                <div class="userInfo"><strong>고흥 류춘삼님</strong><a href="#">로그아웃 <i class="fa fa-sign-out-alt"></i></a></div>
+                <div class="userInfo"><a href="mypage.html" class="user">고흥 류춘삼님</a><a href="#">로그아웃 <i class="fa fa-sign-out-alt"></i></a></div>
             </div>
         </div>
         <div class="container-body">
@@ -116,7 +127,7 @@
                     <div class="user-list">
                         <div class="farm-group on">
                             <div class="mobile function-button">
-                                <a href="#" class="alert"><i class="fa fa-bell"></i></a>
+                                <a href="farmingon_alert.html" class="alert"><i class="fa fa-bell"></i></a>
                                 <a href="#" data-target="#dew-point" class="dew modalCall"><img src="../asset/user/images/icon_function_dew.svg"></a>
                                 <a href="#" data-target="#DIF" class="dif modalCall">DIF</a>
                                 <a href="threshold.html" class="setting"><img src="../asset/user/images/icon_function_setting.svg"></a>
@@ -130,9 +141,9 @@
                                     <span class="farm-address">경상북도 경주시 임계면 용산리 677</span>
                                 </div>
     <!--                            <div class="farm-button">-->
-    <!--                                <button class="btn btn-success btn-outline"><i class="fa fa-edit"></i> 수정</button>-->
-    <!--                                <button class="btn btn-danger btn-outline"><i class="fa fa-times"></i> 삭제</button>-->
-    <!--                                <button class="btn btn-primary btn-outline"><i class="fa fa-plus"></i> 단말기추가</button>-->
+    <!--                                <button class="btn btn-success btn-outline modalCall" data-target="#modifyUser"><i class="fa fa-edit"></i> 수정</button>-->
+    <!--                                <button class="btn btn-danger btn-outline modalCall" data-target="#deleteUser"><i class="fa fa-times"></i> 삭제</button>-->
+    <!--                                <button class="btn btn-primary btn-outline modalCall" data-target="#addDevice"><i class="fa fa-plus"></i> 단말기추가</button>-->
     <!--                            </div>-->
                                 <div class="farm-device">
                                     <label class="farm-device-label">등록장비</label>
@@ -141,7 +152,7 @@
                                 </div>
                             </div>
                             <div class="farm-group-body">
-                                <div class="card" onclick="location.href='farmingon_user_detail.html'">
+                                <div class="card farm">
                                     <div class="card-header">
                                         <div class="list-header">
                                             <span class="badge badge-success">ON</span>
@@ -189,7 +200,7 @@
                                         <div class="crop-name">토마토</div>
                                     </div>
                                 </div>
-                                <div class="card" onclick="location.href='farmingon_user_detail.html'">
+                                <div class="card farm">
                                     <div class="card-header">
                                         <div class="list-header">
                                             <span class="badge badge-default">OFF</span>
@@ -237,7 +248,7 @@
                                         <div class="crop-name">토마토</div>
                                     </div>
                                 </div>
-                                <div class="card" onclick="location.href='farmingon_user_detail.html'">
+                                <div class="card farm">
                                     <div class="card-header">
                                         <div class="list-header">
                                             <span class="badge badge-success">ON</span>
@@ -285,7 +296,7 @@
                                         <div class="crop-name">토마토</div>
                                     </div>
                                 </div>
-                                <div class="card" onclick="location.href='farmingon_user_detail.html'">
+                                <div class="card farm">
                                     <div class="card-header">
                                         <div class="list-header">
                                             <span class="badge badge-success">ON</span>
@@ -333,7 +344,7 @@
                                         <div class="crop-name">토마토</div>
                                     </div>
                                 </div>
-                                <div class="card" onclick="location.href='farmingon_user_detail.html'">
+                                <div class="card farm">
                                     <div class="card-header">
                                         <div class="list-header">
                                             <span class="badge badge-success">ON</span>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Farmire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../asset/common/css/reset.css">
     <link rel="stylesheet" href="../asset/common/css/all.css">
     <link rel="stylesheet" href="../asset/common/css/font.css">
@@ -14,6 +15,20 @@
 </head>
 <body>
 <div class="wrapper">
+    <div class="mobile hiddenTop">
+        <div class="top">
+            <div class="branding">
+                <a href="index.html" class="go-index">FARMIRE</a>
+                <a href="moreView.html" class="nav-more"><i class="fa fa-bars"></i></a>
+                <a href="#" class="setting"><i class="fa fa-cog"></i></a>
+            </div>
+        </div>
+        <ul class="app-icon">
+            <li><a href="farmingon_user.html"><img src="../asset/common/images/icon_farmingon.png"></a></li>
+            <li><a href="farmingon2_user.html"><img src="../asset/common/images/icon_farmingon2.png"></a></li>
+            <li><a href="rmfarm_user.html"><img src="../asset/common/images/icon_rmfarm.png"></a></li>
+        </ul>
+    </div>
     <div class="nav on">
         <h1 class="branding">
             <a href="index.html">FARMIRE</a>
@@ -30,7 +45,7 @@
             <li class="on"><a href="farmingon_alert.html"><i class="fa fa-bell"></i> 알림현황</a></li>
         </ul>
     </div>
-    <div class="container on rmfarm">
+    <div class="container on alert side-page">
         <div class="container-header">
             <div class="nav-folding">
                 <a href="#"><i class="fa fa-bars"></i></a>
@@ -40,11 +55,16 @@
                     <li><a href="notice.html"><i class="fa fa-bullhorn"></i> 공지사항</a></li>
                     <li><a href="mypage.html"><i class="fa fa-key"></i> 마이페이지</a></li>
                 </ul>
-                <div class="userInfo"><strong>고흥 류춘삼님</strong><a href="#">로그아웃 <i class="fa fa-sign-out-alt"></i></a></div>
+                <div class="userInfo"><a href="mypage.html" class="user">고흥 류춘삼님</a><a href="#">로그아웃 <i class="fa fa-sign-out-alt"></i></a></div>
             </div>
         </div>
         <div class="container-body">
-            <h2><span class="badge farmingon">파밍온</span> 알림현황</h2>
+            <h2 class="wide"><span class="badge farmingon">파밍온</span> 알림현황</h2>
+            <div class="app-header mobile">
+                <a href="javascript:history.back()" class="back"><i class="fa fa-chevron-left"></i></a>
+                <label>알림현황</label>
+                <a href="#" class="on-off on"><span>ON</span> <i class="fa fa-toggle-on"></i></a>
+            </div>
             <div class="form-horizontal search">
                 <div class="row">
                     <div class="col-11 d-flex">
@@ -63,8 +83,16 @@
                 </div>
             </div>
             <div class="contents">
+                <div class="mobile device-tab">
+                    <ul>
+                        <li class="on"><a href="#">01225268754</a></li>
+                        <li><a href="#">01225268755</a></li>
+                        <li><a href="#">01225268756</a></li>
+                    </ul>
+                    <div class="indicator"></div>
+                </div>
                 <div class="card">
-                    <div class="tabSearchWrap row">
+                    <div class="tabSearchWrap row count-excel">
                         <div class="col-1">
                             <select class="form-control">
                                 <option>10</option>

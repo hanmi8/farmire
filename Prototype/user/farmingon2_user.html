@@ -14,6 +14,18 @@
     <script type="text/javascript" src="../asset/common/js/jquery.js"></script>
     <script type="text/javascript" src="../asset/common/js/common.js"></script>
     <script type="text/javascript" src="../asset/common/js/jquery.bxslider.js"></script>
+    <script>
+        $(function(){
+            $('.card.farm').click(function(){
+                console.log('click')
+                if($(window).width() > 768){
+                    location.href="farmingon2_user_detail.html"
+                }else{
+                    location.href="app_farmingon2_detailTable.html"
+                }
+            })
+        })
+    </script>
 </head>
 <body>
 <div class="wrapper">
@@ -55,7 +67,7 @@
                     <li><a href="notice.html"><i class="fa fa-bullhorn"></i> 공지사항</a></li>
                     <li><a href="mypage.html"><i class="fa fa-key"></i> 마이페이지</a></li>
                 </ul>
-                <div class="userInfo"><strong>고흥 류춘삼님</strong><a href="#">로그아웃 <i class="fa fa-sign-out-alt"></i></a></div>
+                <div class="userInfo"><a href="mypage.html" class="user">고흥 류춘삼님</a><a href="#">로그아웃 <i class="fa fa-sign-out-alt"></i></a></div>
             </div>
         </div>
         <div class="container-body">
@@ -105,7 +117,7 @@
                     <div class="user-list">
                         <div class="farm-group on">
                             <div class="mobile function-button">
-                                <a href="#" class="alert"><i class="fa fa-bell"></i></a>
+                                <a href="farmingon2_alert.html" class="alert"><i class="fa fa-bell"></i></a>
                                 <a href="#" class="dew modalCall" data-target="#dew-point"><img src="../asset/user/images/icon_function_dew.svg"></a>
                                 <a href="#" class="dif modalCall" data-target="#DIF">DIF</a>
                                 <a href="threshold.html" class="setting"><img src="../asset/user/images/icon_function_setting.svg"></a>
@@ -125,7 +137,7 @@
                                 </div>
                             </div>
                             <div class="farm-group-body">
-                                <div class="card" onclick="location.href='farmingon2_user_detail.html'">
+                                <div class="card farm">
                                     <div class="card-header">
                                         <div class="list-header">
                                             <span class="badge badge-success">ON</span>
@@ -201,7 +213,7 @@
                                         <div class="crop-name">토마토</div>
                                     </div>
                                 </div>
-                                <div class="card" onclick="location.href='farmingon2_user_detail.html'">
+                                <div class="card farm">
                                     <div class="card-header">
                                         <div class="list-header">
                                             <span class="badge badge-success">ON</span>
@@ -210,7 +222,7 @@
                                     </div>
                                     <div class="card-body">
                                         <ul>
-                                            <li class="mobile temperature">
+                                            <li class="temperature">
                                                 <label>온도</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -218,7 +230,7 @@
                                                 </div>
                                                 <strong>00.00<span class="unit">℃</span></strong>
                                             </li>
-                                            <li class="mobile humidity">
+                                            <li class="humidity">
                                                 <label>습도</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -226,7 +238,7 @@
                                                 </div>
                                                 <strong>68.00<span class="unit">%</span></strong>
                                             </li>
-                                            <li class="mobile co2">
+                                            <li class="co2">
                                                 <label>CO2</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -234,7 +246,7 @@
                                                 </div>
                                                 <strong>554.0<span class="unit">ppm</span></strong>
                                             </li>
-                                            <li class="mobile ph">
+                                            <li class="ph">
                                                 <label>pH</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -242,7 +254,7 @@
                                                 </div>
                                                 <strong>5.68</strong>
                                             </li>
-                                            <li class="mobile ground-tem">
+                                            <li class="ground-tem">
                                                 <label>배지 온도</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -250,7 +262,7 @@
                                                 </div>
                                                 <strong>14.70<span class="unit">℃</span></strong>
                                             </li>
-                                            <li class="mobile ground-humidity">
+                                            <li class="ground-humidity">
                                                 <label>배지 습도</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -258,7 +270,7 @@
                                                 </div>
                                                 <strong>28.88%</strong>
                                             </li>
-                                            <li class="mobile ground-ec">
+                                            <li class="ground-ec">
                                                 <label>배지 EC</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -266,7 +278,7 @@
                                                 </div>
                                                 <strong>1.87<span class="unit">ms/cm</span></strong>
                                             </li>
-                                            <li class="mobile lux">
+                                            <li class="lux">
                                                 <label>광량</label>
                                                 <strong>2033.00<span class="unit">lux</span></strong>
                                             </li>
@@ -277,7 +289,7 @@
                                         <div class="crop-name">토마토</div>
                                     </div>
                                 </div>
-                                <div class="card" onclick="location.href='farmingon2_user_detail.html'">
+                                <div class="card farm">
                                     <div class="card-header">
                                         <div class="list-header">
                                             <span class="badge badge-success">ON</span>
@@ -286,7 +298,7 @@
                                     </div>
                                     <div class="card-body">
                                         <ul>
-                                            <li class="mobile temperature">
+                                            <li class="temperature">
                                                 <label>온도</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -294,7 +306,7 @@
                                                 </div>
                                                 <strong>00.00<span class="unit">℃</span></strong>
                                             </li>
-                                            <li class="mobile humidity">
+                                            <li class="humidity">
                                                 <label>습도</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -302,7 +314,7 @@
                                                 </div>
                                                 <strong>68.00<span class="unit">%</span></strong>
                                             </li>
-                                            <li class="mobile co2">
+                                            <li class="co2">
                                                 <label>CO2</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -310,7 +322,7 @@
                                                 </div>
                                                 <strong>554.0<span class="unit">ppm</span></strong>
                                             </li>
-                                            <li class="mobile ph">
+                                            <li class="ph">
                                                 <label>pH</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -318,7 +330,7 @@
                                                 </div>
                                                 <strong>5.68</strong>
                                             </li>
-                                            <li class="mobile ground-tem">
+                                            <li class="ground-tem">
                                                 <label>배지 온도</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -326,7 +338,7 @@
                                                 </div>
                                                 <strong>14.70<span class="unit">℃</span></strong>
                                             </li>
-                                            <li class="mobile ground-humidity">
+                                            <li class="ground-humidity">
                                                 <label>배지 습도</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -334,7 +346,7 @@
                                                 </div>
                                                 <strong>28.88%</strong>
                                             </li>
-                                            <li class="mobile ground-ec">
+                                            <li class="ground-ec">
                                                 <label>배지 EC</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -342,7 +354,7 @@
                                                 </div>
                                                 <strong>1.87<span class="unit">ms/cm</span></strong>
                                             </li>
-                                            <li class="mobile lux">
+                                            <li class="lux">
                                                 <label>광량</label>
                                                 <strong>2033.00<span class="unit">lux</span></strong>
                                             </li>
@@ -353,7 +365,7 @@
                                         <div class="crop-name">토마토</div>
                                     </div>
                                 </div>
-                                <div class="card" onclick="location.href='farmingon2_user_detail.html'">
+                                <div class="card farm">
                                     <div class="card-header">
                                         <div class="list-header">
                                             <span class="badge badge-success">ON</span>
@@ -362,7 +374,7 @@
                                     </div>
                                     <div class="card-body">
                                         <ul>
-                                            <li class="mobile temperature">
+                                            <li class="temperature">
                                                 <label>온도</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -370,7 +382,7 @@
                                                 </div>
                                                 <strong>00.00<span class="unit">℃</span></strong>
                                             </li>
-                                            <li class="mobile humidity">
+                                            <li class="humidity">
                                                 <label>습도</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -378,7 +390,7 @@
                                                 </div>
                                                 <strong>68.00<span class="unit">%</span></strong>
                                             </li>
-                                            <li class="mobile co2">
+                                            <li class="co2">
                                                 <label>CO2</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -386,7 +398,7 @@
                                                 </div>
                                                 <strong>554.0<span class="unit">ppm</span></strong>
                                             </li>
-                                            <li class="mobile ph">
+                                            <li class="ph">
                                                 <label>pH</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -394,7 +406,7 @@
                                                 </div>
                                                 <strong>5.68</strong>
                                             </li>
-                                            <li class="mobile ground-tem">
+                                            <li class="ground-tem">
                                                 <label>배지 온도</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -402,7 +414,7 @@
                                                 </div>
                                                 <strong>14.70<span class="unit">℃</span></strong>
                                             </li>
-                                            <li class="mobile ground-humidity">
+                                            <li class="ground-humidity">
                                                 <label>배지 습도</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -410,7 +422,7 @@
                                                 </div>
                                                 <strong>28.88%</strong>
                                             </li>
-                                            <li class="mobile ground-ec">
+                                            <li class="ground-ec">
                                                 <label>배지 EC</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -418,7 +430,7 @@
                                                 </div>
                                                 <strong>1.87<span class="unit">ms/cm</span></strong>
                                             </li>
-                                            <li class="mobile lux">
+                                            <li class="lux">
                                                 <label>광량</label>
                                                 <strong>2033.00<span class="unit">lux</span></strong>
                                             </li>
@@ -429,7 +441,7 @@
                                         <div class="crop-name">토마토</div>
                                     </div>
                                 </div>
-                                <div class="card" onclick="location.href='farmingon2_user_detail.html'">
+                                <div class="card farm">
                                     <div class="card-header">
                                         <div class="list-header">
                                             <span class="badge badge-success">ON</span>
@@ -438,7 +450,7 @@
                                     </div>
                                     <div class="card-body">
                                         <ul>
-                                            <li class="mobile temperature">
+                                            <li class="temperature">
                                                 <label>온도</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -446,7 +458,7 @@
                                                 </div>
                                                 <strong>00.00<span class="unit">℃</span></strong>
                                             </li>
-                                            <li class="mobile humidity">
+                                            <li class="humidity">
                                                 <label>습도</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -454,7 +466,7 @@
                                                 </div>
                                                 <strong>68.00<span class="unit">%</span></strong>
                                             </li>
-                                            <li class="mobile co2">
+                                            <li class="co2">
                                                 <label>CO2</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -462,7 +474,7 @@
                                                 </div>
                                                 <strong>554.0<span class="unit">ppm</span></strong>
                                             </li>
-                                            <li class="mobile ph">
+                                            <li class="ph">
                                                 <label>pH</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -470,7 +482,7 @@
                                                 </div>
                                                 <strong>5.68</strong>
                                             </li>
-                                            <li class="mobile ground-tem">
+                                            <li class="ground-tem">
                                                 <label>배지 온도</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -478,7 +490,7 @@
                                                 </div>
                                                 <strong>14.70<span class="unit">℃</span></strong>
                                             </li>
-                                            <li class="mobile ground-humidity">
+                                            <li class="ground-humidity">
                                                 <label>배지 습도</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -486,7 +498,7 @@
                                                 </div>
                                                 <strong>28.88%</strong>
                                             </li>
-                                            <li class="mobile ground-ec">
+                                            <li class="ground-ec">
                                                 <label>배지 EC</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -494,7 +506,7 @@
                                                 </div>
                                                 <strong>1.87<span class="unit">ms/cm</span></strong>
                                             </li>
-                                            <li class="mobile lux">
+                                            <li class="lux">
                                                 <label>광량</label>
                                                 <strong>2033.00<span class="unit">lux</span></strong>
                                             </li>
@@ -505,7 +517,7 @@
                                         <div class="crop-name">토마토</div>
                                     </div>
                                 </div>
-                                <div class="card" onclick="location.href='farmingon2_user_detail.html'">
+                                <div class="card farm">
                                     <div class="card-header">
                                         <div class="list-header">
                                             <span class="badge badge-success">ON</span>
@@ -514,7 +526,7 @@
                                     </div>
                                     <div class="card-body">
                                         <ul>
-                                            <li class="mobile temperature">
+                                            <li class="temperature">
                                                 <label>온도</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -522,7 +534,7 @@
                                                 </div>
                                                 <strong>00.00<span class="unit">℃</span></strong>
                                             </li>
-                                            <li class="mobile humidity">
+                                            <li class="humidity">
                                                 <label>습도</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -530,7 +542,7 @@
                                                 </div>
                                                 <strong>68.00<span class="unit">%</span></strong>
                                             </li>
-                                            <li class="mobile co2">
+                                            <li class="co2">
                                                 <label>CO2</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -538,7 +550,7 @@
                                                 </div>
                                                 <strong>554.0<span class="unit">ppm</span></strong>
                                             </li>
-                                            <li class="mobile ph">
+                                            <li class="ph">
                                                 <label>pH</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -546,7 +558,7 @@
                                                 </div>
                                                 <strong>5.68</strong>
                                             </li>
-                                            <li class="mobile ground-tem">
+                                            <li class="ground-tem">
                                                 <label>배지 온도</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -554,7 +566,7 @@
                                                 </div>
                                                 <strong>14.70<span class="unit">℃</span></strong>
                                             </li>
-                                            <li class="mobile ground-humidity">
+                                            <li class="ground-humidity">
                                                 <label>배지 습도</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -562,7 +574,7 @@
                                                 </div>
                                                 <strong>28.88%</strong>
                                             </li>
-                                            <li class="mobile ground-ec">
+                                            <li class="ground-ec">
                                                 <label>배지 EC</label>
                                                 <div class="mobile min-max">
                                                     <span><i class="fa fa-caret-up"></i> 5.60</span>
@@ -570,7 +582,7 @@
                                                 </div>
                                                 <strong>1.87<span class="unit">ms/cm</span></strong>
                                             </li>
-                                            <li class="mobile lux">
+                                            <li class="lux">
                                                 <label>광량</label>
                                                 <strong>2033.00<span class="unit">lux</span></strong>
                                             </li>
@@ -588,7 +600,7 @@
             </div>
             <ul class="mobile zone">
                 <li class="on"><a href="#"><i class="fa fa-home"></i></a></li>
-                <li><a href="farmingon2_user_zone1.html">1구역</a></li>
+                <li><a href="app_zone1.html">1구역</a></li>
                 <li><a href="#">2구역</a></li>
                 <li><a href="#">3구역</a></li>
             </ul>

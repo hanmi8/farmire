@@ -29,7 +29,6 @@
             <li class="on"><a href="farmingon_user.html"><i class="fa fa-user"></i> 사용자관리</a></li>
             <li><a href="farmingon_monitoring.html"><i class="fa fa-desktop"></i> 단말모니터링</a></li>
             <li><a href="farmingon_alert.html"><i class="fa fa-bell"></i> 알림현황</a></li>
-            <li><a href="farmingon_app.html"><i class="fa fa-mobile-alt"></i> 앱사용현황</a></li>
         </ul>
     </div>
     <div class="container on admin">
@@ -39,17 +38,18 @@
             </div>
             <div class="menu-right">
                 <ul class="common-menu">
+                    <li><a href="app.html"><i class="fa fa-mobile-alt"></i> 앱사용현황</a></li>
                     <li><a href="notice.html"><i class="fa fa-bullhorn"></i> 게시판관리</a></li>
                     <li><a href="password.html"><i class="fa fa-key"></i> 비밀번호변경</a></li>
                 </ul>
                 <div class="userInfo"><strong>관리자</strong><a href="#">로그아웃 <i class="fa fa-sign-out-alt"></i></a></div>
             </div>
         </div>
-        <div class="container-body farmingOn">
-            <h2><span class="badge badge-primary">파밍온</span> 사용자 관리</h2>
+        <div class="container-body farmingon">
+            <h2><span class="badge farmingon">파밍온</span> 사용자 관리</h2>
             <section>
                 <h3>장비정보</h3>
-                <div class="form-vertical row">
+                <div class="form-vertical d-flex">
                     <div class="col-6">
                         <div class="form-group">
                             <label class="control-label col-4">단말전화번호</label>
@@ -101,54 +101,54 @@
             <div class="card">
                 <section>
                     <h3>단말 알림설정 값</h3>
-                    <ul class="readingWrap setting row">
-                        <li>
+                    <ul class="min-max-wrap">
+                        <li class="col-3">
                             <div class="reading">
                                 <label>온도</label>
-                                <div class="number">
+                                <div class="min-max">
                                     <i class="fa fa-caret-up text-danger"></i>
                                     <strong>25.00℃</strong>
                                 </div>
-                                <div class="number">
+                                <div class="min-max">
                                     <i class="fa fa-caret-down text-success"></i>
                                     <strong>10.00℃</strong>
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="col-3">
                             <div class="reading">
                                 <label>습도</label>
-                                <div class="number">
+                                <div class="min-max">
                                     <i class="fa fa-caret-up text-danger"></i>
                                     <strong>80.00%</strong>
                                 </div>
-                                <div class="number">
+                                <div class="min-max">
                                     <i class="fa fa-caret-down text-success"></i>
                                     <strong>30.00%</strong>
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="col-3">
                             <div class="reading">
                                 <label>CO2</label>
-                                <div class="number">
+                                <div class="min-max">
                                     <i class="fa fa-caret-up text-danger"></i>
                                     <strong>2000ppm</strong>
                                 </div>
-                                <div class="number">
+                                <div class="min-max">
                                     <i class="fa fa-caret-down text-success"></i>
                                     <strong>250ppm</strong>
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="col-3">
                             <div class="reading">
                                 <label>배지</label>
-                                <div class="number">
+                                <div class="min-max">
                                     <i class="fa fa-caret-up text-danger"></i>
                                     <strong>25.00</strong>
                                 </div>
-                                <div class="number">
+                                <div class="min-max">
                                     <i class="fa fa-caret-down text-success"></i>
                                     <strong>18.00</strong>
                                 </div>
@@ -280,14 +280,14 @@
                             </select>
                             <input type="text" class="form-control" value="2021-01-16">
                             <button class="btn btn-primary"><i class="fa fa-search"></i> 검색</button>
-                            <button class="btn btn-primary"><i class="fa fa-file-excel"></i> 엑셀저장</button>
                         </div>
                         <div class="chart">CHART
                             <br>CO2/온도/습도/광량
                         </div>
                     </div>
                     <div class="tab-contents" id="tabText02">
-                        <div class="table-responsive">
+                        <button class="btn btn-primary"><i class="fa fa-file-excel"></i> 엑셀저장</button>
+                        <div class="table-responsive mt-20">
                             <table class="table-vertical">
                                 <thead>
                                 <tr>

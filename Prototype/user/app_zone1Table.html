@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Farmire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../asset/common/css/reset.css">
+    <link rel="stylesheet" href="../asset/common/css/all.css">
+    <link rel="stylesheet" href="../asset/common/css/font.css">
+    <link rel="stylesheet" href="../asset/common/css/button.css">
+    <link rel="stylesheet" href="../asset/common/css/common.css">
+    <link rel="stylesheet" href="../asset/user/css/user_base.css">
+    <script type="text/javascript" src="../asset/common/js/jquery.js"></script>
+    <script type="text/javascript" src="../asset/common/js/common.js"></script>
+    <script>
+        $(function(){
+            $('#detailZone1Table').load('in_zone1Table.html')
+        })
+    </script>
+</head>
+<body>
+<div class="wrapper app farmingon2">
+    <div class="app-header mobile">
+        <a href="javascript:history.back()" class="back"><i class="fa fa-chevron-left"></i></a>
+        <label>파밍온2 - 1구역</label>
+        <a href="app_zone1Chart.html" class="right"><i class="fa fa-chart-line"></i></a>
+    </div>
+    <div class="tabSearchWrap condition">
+        <select class="wide form-control">
+            <option>일일</option>
+        </select>
+        <select class="mobile form-control">
+            <option>전체</option>
+            <option>온도</option>
+            <option>습도</option>
+            <option>CO2</option>
+            <option>광량</option>
+            <option>pH</option>
+            <option>배지온도</option>
+            <option>배지습도</option>
+            <option>배지EC</option>
+            <option>이슬점</option>
+            <option>수분부족량</option>
+        </select>
+        <input type="date" class="form-control" value="2021-01-16">
+        <select class="form-control">
+            <option>00:00</option>
+            <option>01:00</option>
+            <option>02:00</option>
+            <option>03:00</option>
+            <option>04:00</option>
+            <option>05:00</option>
+            <option>06:00</option>
+            <option>07:00</option>
+            <option>08:00</option>
+            <option>09:00</option>
+            <option>10:00</option>
+            <option>11:00</option>
+            <option>12:00</option>
+            <option>13:00</option>
+            <option>14:00</option>
+            <option>15:00</option>
+            <option>16:00</option>
+            <option>17:00</option>
+            <option>18:00</option>
+            <option>19:00</option>
+            <option>20:00</option>
+            <option>21:00</option>
+            <option>22:00</option>
+            <option>23:00</option>
+        </select>
+        <button class="btn btn-primary"><i class="fa fa-search"></i> 검색</button>
+    </div>
+    <div class="include" id="detailZone1Table"></div>
+</div>
+</body>
+</html>

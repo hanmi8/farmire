@@ -29,7 +29,6 @@
             <li class="on"><a href="farmingon2_user.html"><i class="fa fa-user"></i> 사용자관리</a></li>
             <li><a href="farmingon2_monitoring.html"><i class="fa fa-desktop"></i> 단말모니터링</a></li>
             <li><a href="farmingon2_alert.html"><i class="fa fa-bell"></i> 알림현황</a></li>
-            <li><a href="farmingon2_app.html"><i class="fa fa-mobile-alt"></i> 앱사용현황</a></li>
         </ul>
     </div>
     <div class="container on admin">
@@ -39,6 +38,7 @@
             </div>
             <div class="menu-right">
                 <ul class="common-menu">
+                    <li><a href="app.html"><i class="fa fa-mobile-alt"></i> 앱사용현황</a></li>
                     <li><a href="notice.html"><i class="fa fa-bullhorn"></i> 게시판관리</a></li>
                     <li><a href="password.html"><i class="fa fa-key"></i> 비밀번호변경</a></li>
                 </ul>
@@ -214,8 +214,8 @@
                 <div class="contents-button-group">
                     <div class="main-buttons">
                         <button class="btn btn-primary"><i class="fa fa-file-excel"></i> 엑셀저장</button>
-                        <button class="btn btn-primary"><i class="fa fa-check"></i> 선택보기</button>
-                        <button class="btn btn-primary"><i class="fa fa-user-plus"></i> 사용자추가</button>
+<!--                        <button class="btn btn-primary"><i class="fa fa-check"></i> 선택보기</button>-->
+                        <button class="btn btn-primary modalCall" data-target="#addUser"><i class="fa fa-user-plus"></i> 사용자추가</button>
                     </div>
                     <div class="all-folding-buttons">
                         <button class="btn btn-success expand"><i class="fa fa-expand-alt"></i> 모두펼치기</button>
@@ -232,9 +232,9 @@
                                 <span class="farm-address">경상북도 청도군 청도읍 고수리 908-3</span>
                             </div>
                             <div class="farm-button">
-                                <button class="btn btn-success btn-outline"><i class="fa fa-edit"></i> 수정</button>
-                                <button class="btn btn-danger btn-outline"><i class="fa fa-times"></i> 삭제</button>
-                                <button class="btn btn-primary btn-outline"><i class="fa fa-plus"></i> 단말기추가</button>
+                                <button class="btn btn-success btn-outline modalCall" data-target="#modifyUser"><i class="fa fa-edit"></i> 수정</button>
+                                <button class="btn btn-danger btn-outline modalCall" data-target="#deleteUser"><i class="fa fa-times"></i> 삭제</button>
+                                <button class="btn btn-primary btn-outline modalCall" data-target="#addDevice"><i class="fa fa-plus"></i> 단말기추가</button>
                             </div>
                             <div class="farm-device">
                                 <label class="farm-device-label">등록장비</label>
@@ -243,7 +243,7 @@
                             </div>
                         </div>
                         <div class="farm-group-body">
-                            <div class="card" onclick="location.href='farmingon2_user_detail.html'">
+                            <div class="card farm">
                                 <div class="card-header">
                                     <div class="list-header">
                                         <!--<span class="badge badge-success">파밍온2</span>-->
@@ -292,7 +292,7 @@
                                     <div class="crop-name">딸기</div>
                                 </div>
                             </div>
-                            <div class="card" onclick="location.href='farmingon2_user_detail.html'">
+                            <div class="card farm">
                                 <div class="card-header">
                                     <div class="list-header">
                                         <!--<span class="badge badge-success">파밍온2</span>-->
@@ -352,9 +352,9 @@
                                 <span class="farm-address">대한민국 경상북도 영주시 단산면 구구리 1016</span>
                             </div>
                             <div class="farm-button">
-                                <button class="btn btn-success btn-outline"><i class="fa fa-edit"></i> 수정</button>
-                                <button class="btn btn-danger btn-outline"><i class="fa fa-times"></i> 삭제</button>
-                                <button class="btn btn-primary btn-outline"><i class="fa fa-plus"></i> 단말기추가</button>
+                                <button class="btn btn-success btn-outline modalCall" data-target="#modifyUser"><i class="fa fa-edit"></i> 수정</button>
+                                <button class="btn btn-danger btn-outline modalCall" data-target="#deleteUser"><i class="fa fa-times"></i> 삭제</button>
+                                <button class="btn btn-primary btn-outline modalCall" data-target="#addDevice"><i class="fa fa-plus"></i> 단말기추가</button>
                             </div>
                             <div class="farm-device">
                                 <label class="farm-device-label">등록장비</label>
@@ -363,7 +363,7 @@
                             </div>
                         </div>
                         <div class="farm-group-body">
-                            <div class="card" onclick="location.href='farmingon2_user_detail.html'">
+                            <div class="card farm">
                                 <div class="card-header">
                                     <div class="list-header">
                                         <!--<span class="badge badge-success">파밍온2</span>-->
@@ -412,7 +412,7 @@
                                     <div class="crop-name">딸기</div>
                                 </div>
                             </div>
-                            <div class="card" onclick="location.href='farmingon2_user_detail.html'">
+                            <div class="card farm">
                                 <div class="card-header">
                                     <div class="list-header">
                                         <!--<span class="badge badge-success">파밍온2</span>-->
@@ -461,7 +461,7 @@
                                     <div class="crop-name">딸기</div>
                                 </div>
                             </div>
-                            <div class="card" onclick="location.href='farmingon2_user_detail.html'">
+                            <div class="card farm">
                                 <div class="card-header">
                                     <div class="list-header">
                                         <!--<span class="badge badge-success">파밍온2</span>-->
@@ -510,7 +510,7 @@
                                     <div class="crop-name">딸기</div>
                                 </div>
                             </div>
-                            <div class="card" onclick="location.href='farmingon2_user_detail.html'">
+                            <div class="card farm">
                                 <div class="card-header">
                                     <div class="list-header">
                                         <!--<span class="badge badge-success">파밍온2</span>-->
@@ -570,9 +570,9 @@
                                 <span class="farm-address">대한민국 경상북도 영주시 이산면 신천리 218</span>
                             </div>
                             <div class="farm-button">
-                                <button class="btn btn-success btn-outline"><i class="fa fa-edit"></i> 수정</button>
-                                <button class="btn btn-danger btn-outline"><i class="fa fa-times"></i> 삭제</button>
-                                <button class="btn btn-primary btn-outline"><i class="fa fa-plus"></i> 단말기추가</button>
+                                <button class="btn btn-success btn-outline modalCall" data-target="#modifyUser"><i class="fa fa-edit"></i> 수정</button>
+                                <button class="btn btn-danger btn-outline modalCall" data-target="#deleteUser"><i class="fa fa-times"></i> 삭제</button>
+                                <button class="btn btn-primary btn-outline modalCall" data-target="#addDevice"><i class="fa fa-plus"></i> 단말기추가</button>
                             </div>
                             <div class="farm-device">
                                 <label class="farm-device-label">등록장비</label>
@@ -581,7 +581,7 @@
                             </div>
                         </div>
                         <div class="farm-group-body">
-                            <div class="card" onclick="location.href='farmingon2_user_detail.html'">
+                            <div class="card farm">
                                 <div class="card-header">
                                     <div class="list-header">
                                         <!--<span class="badge badge-success">파밍온2</span>-->
@@ -630,7 +630,7 @@
                                     <div class="crop-name">딸기</div>
                                 </div>
                             </div>
-                            <div class="card" onclick="location.href='farmingon2_user_detail.html'">
+                            <div class="card farm">
                                 <div class="card-header">
                                     <div class="list-header">
                                         <!--<span class="badge badge-success">파밍온2</span>-->
@@ -679,7 +679,7 @@
                                     <div class="crop-name">딸기</div>
                                 </div>
                             </div>
-                            <div class="card" onclick="location.href='farmingon2_user_detail.html'">
+                            <div class="card farm">
                                 <div class="card-header">
                                     <div class="list-header">
                                         <!--<span class="badge badge-success">파밍온2</span>-->
@@ -739,9 +739,9 @@
                                 <span class="farm-address">대한민국 경상남도 고성군 거류면 은월리 184-2</span>
                             </div>
                             <div class="farm-button">
-                                <button class="btn btn-success btn-outline"><i class="fa fa-edit"></i> 수정</button>
-                                <button class="btn btn-danger btn-outline"><i class="fa fa-times"></i> 삭제</button>
-                                <button class="btn btn-primary btn-outline"><i class="fa fa-plus"></i> 단말기추가</button>
+                                <button class="btn btn-success btn-outline modalCall" data-target="#modifyUser"><i class="fa fa-edit"></i> 수정</button>
+                                <button class="btn btn-danger btn-outline modalCall" data-target="#deleteUser"><i class="fa fa-times"></i> 삭제</button>
+                                <button class="btn btn-primary btn-outline modalCall" data-target="#addDevice"><i class="fa fa-plus"></i> 단말기추가</button>
                             </div>
                             <div class="farm-device">
                                 <label class="farm-device-label">등록장비</label>
@@ -750,7 +750,7 @@
                             </div>
                         </div>
                         <div class="farm-group-body">
-                            <div class="card" onclick="location.href='farmingon2_user_detail.html'">
+                            <div class="card farm">
                                 <div class="card-header">
                                     <div class="list-header">
                                         <!--<span class="badge badge-success">파밍온2</span>-->
@@ -799,7 +799,7 @@
                                     <div class="crop-name">딸기</div>
                                 </div>
                             </div>
-                            <div class="card" onclick="location.href='farmingon2_user_detail.html'">
+                            <div class="card farm">
                                 <div class="card-header">
                                     <div class="list-header">
                                         <!--<span class="badge badge-success">파밍온2</span>-->
@@ -860,9 +860,9 @@
                                 <!--                                <span class="farm-address">강원도 평창군 대화면 하안미리 2018</span>-->
                             </div>
                             <div class="farm-button">
-                                <button class="btn btn-success btn-outline"><i class="fa fa-edit"></i> 수정</button>
-                                <button class="btn btn-danger btn-outline"><i class="fa fa-times"></i> 삭제</button>
-                                <button class="btn btn-primary btn-outline"><i class="fa fa-plus"></i> 단말기추가</button>
+                                <button class="btn btn-success btn-outline modalCall" data-target="#modifyUser"><i class="fa fa-edit"></i> 수정</button>
+                                <button class="btn btn-danger btn-outline modalCall" data-target="#deleteUser"><i class="fa fa-times"></i> 삭제</button>
+                                <button class="btn btn-primary btn-outline modalCall" data-target="#addDevice"><i class="fa fa-plus"></i> 단말기추가</button>
                             </div>
                             <div class="farm-device">
                                 <label class="farm-device-label">등록장비</label>
@@ -916,9 +916,9 @@
                                 <!--                                <span class="farm-address">강원도 평창군 대화면 하안미리 2018</span>-->
                             </div>
                             <div class="farm-button">
-                                <button class="btn btn-success btn-outline"><i class="fa fa-edit"></i> 수정</button>
-                                <button class="btn btn-danger btn-outline"><i class="fa fa-times"></i> 삭제</button>
-                                <button class="btn btn-primary btn-outline"><i class="fa fa-plus"></i> 단말기추가</button>
+                                <button class="btn btn-success btn-outline modalCall" data-target="#modifyUser"><i class="fa fa-edit"></i> 수정</button>
+                                <button class="btn btn-danger btn-outline modalCall" data-target="#deleteUser"><i class="fa fa-times"></i> 삭제</button>
+                                <button class="btn btn-primary btn-outline modalCall" data-target="#addDevice"><i class="fa fa-plus"></i> 단말기추가</button>
                             </div>
                             <div class="farm-device">
                                 <label class="farm-device-label">등록장비</label>
@@ -972,9 +972,9 @@
                                 <!--                                <span class="farm-address">강원도 평창군 대화면 하안미리 2018</span>-->
                             </div>
                             <div class="farm-button">
-                                <button class="btn btn-success btn-outline"><i class="fa fa-edit"></i> 수정</button>
-                                <button class="btn btn-danger btn-outline"><i class="fa fa-times"></i> 삭제</button>
-                                <button class="btn btn-primary btn-outline"><i class="fa fa-plus"></i> 단말기추가</button>
+                                <button class="btn btn-success btn-outline modalCall" data-target="#modifyUser"><i class="fa fa-edit"></i> 수정</button>
+                                <button class="btn btn-danger btn-outline modalCall" data-target="#deleteUser"><i class="fa fa-times"></i> 삭제</button>
+                                <button class="btn btn-primary btn-outline modalCall" data-target="#addDevice"><i class="fa fa-plus"></i> 단말기추가</button>
                             </div>
                             <div class="farm-device">
                                 <label class="farm-device-label">등록장비</label>
@@ -1028,9 +1028,9 @@
                                 <!--                                <span class="farm-address">강원도 평창군 대화면 하안미리 2018</span>-->
                             </div>
                             <div class="farm-button">
-                                <button class="btn btn-success btn-outline"><i class="fa fa-edit"></i> 수정</button>
-                                <button class="btn btn-danger btn-outline"><i class="fa fa-times"></i> 삭제</button>
-                                <button class="btn btn-primary btn-outline"><i class="fa fa-plus"></i> 단말기추가</button>
+                                <button class="btn btn-success btn-outline modalCall" data-target="#modifyUser"><i class="fa fa-edit"></i> 수정</button>
+                                <button class="btn btn-danger btn-outline modalCall" data-target="#deleteUser"><i class="fa fa-times"></i> 삭제</button>
+                                <button class="btn btn-primary btn-outline modalCall" data-target="#addDevice"><i class="fa fa-plus"></i> 단말기추가</button>
                             </div>
                             <div class="farm-device">
                                 <label class="farm-device-label">등록장비</label>
@@ -1084,9 +1084,9 @@
                                 <!--                                <span class="farm-address">강원도 평창군 대화면 하안미리 2018</span>-->
                             </div>
                             <div class="farm-button">
-                                <button class="btn btn-success btn-outline"><i class="fa fa-edit"></i> 수정</button>
-                                <button class="btn btn-danger btn-outline"><i class="fa fa-times"></i> 삭제</button>
-                                <button class="btn btn-primary btn-outline"><i class="fa fa-plus"></i> 단말기추가</button>
+                                <button class="btn btn-success btn-outline modalCall" data-target="#modifyUser"><i class="fa fa-edit"></i> 수정</button>
+                                <button class="btn btn-danger btn-outline modalCall" data-target="#deleteUser"><i class="fa fa-times"></i> 삭제</button>
+                                <button class="btn btn-primary btn-outline modalCall" data-target="#addDevice"><i class="fa fa-plus"></i> 단말기추가</button>
                             </div>
                             <div class="farm-device">
                                 <label class="farm-device-label">등록장비</label>
@@ -1141,9 +1141,9 @@
                                 <!--                                <span class="farm-address">강원도 평창군 대화면 하안미리 2018</span>-->
                             </div>
                             <div class="farm-button">
-                                <button class="btn btn-success btn-outline"><i class="fa fa-edit"></i> 수정</button>
-                                <button class="btn btn-danger btn-outline"><i class="fa fa-times"></i> 삭제</button>
-                                <button class="btn btn-primary btn-outline"><i class="fa fa-plus"></i> 단말기추가</button>
+                                <button class="btn btn-success btn-outline modalCall" data-target="#modifyUser"><i class="fa fa-edit"></i> 수정</button>
+                                <button class="btn btn-danger btn-outline modalCall" data-target="#deleteUser"><i class="fa fa-times"></i> 삭제</button>
+                                <button class="btn btn-primary btn-outline modalCall" data-target="#addDevice"><i class="fa fa-plus"></i> 단말기추가</button>
                             </div>
                             <div class="farm-device">
                                 <label class="farm-device-label">등록장비</label>
@@ -1243,10 +1243,6 @@
                     <div class="col-8"><input type="text" class="form-control"></div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-4">이메일</label>
-                    <div class="col-8"><input type="text" class="form-control"></div>
-                </div>
-                <div class="form-group">
                     <label class="control-label col-4">주소</label>
                     <div class="col-8"><input type="text" class="form-control"></div>
                 </div>
@@ -1259,6 +1255,67 @@
     </div>
 </div>
 
+<!-- modal 사용자수정 -->
+<div class="modal" id="modifyUser">
+    <div class="modal-dialog modal-middle">
+        <div class="modal-header">
+            <h3>사용자수정</h3>
+            <span class="modal-close"></span>
+        </div>
+        <div class="modal-body">
+            <div class="form-vertical">
+                <div class="form-group">
+                    <label class="control-label col-4">사용자명</label>
+                    <div class="col-8"><input type="text" class="form-control"></div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-4">전화번호</label>
+                    <div class="col-8"><input type="text" class="form-control"></div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-4"><span class="text-danger">*</span> 비밀번호</label>
+                    <div class="col-8">
+                        <input type="password" class="form-control">
+                        <div class="validation text-danger nonValidate">비밀번호는 숫자, 영문자를 포함하여 8~20자 이내로 작성해 주세요.</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-4"><span class="text-danger">*</span> 비밀번호 확인</label>
+                    <div class="col-8">
+                        <input type="password" class="form-control">
+                        <div class="validation text-danger nonValidate">비밀번호가 일치하지 않습니다.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-default modal-close"><i class="fa fa-times"></i> 취소</button>
+            <button class="btn btn-primary"><i class="fa fa-check"></i> 확인</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- modal 사용자삭제 -->
+<div class="modal" id="deleteUser">
+    <div class="modal-dialog modal-small">
+        <div class="modal-header">
+            <h3>사용자삭제</h3>
+            <span class="modal-close"></span>
+        </div>
+        <div class="modal-body">
+            <p class="paragWrap">
+                사용자를 삭제하시겠습니까?
+            </p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-default modal-close"><i class="fa fa-times"></i> 취소</button>
+            <button class="btn btn-primary"><i class="fa fa-check"></i> 확인</button>
+        </div>
+    </div>
+</div>
+
+
 
 <!-- modal 단말기 추가 -->
 <div class="modal" id="addDevice">
@@ -1269,21 +1326,21 @@
         </div>
         <div class="modal-body">
             <div class="form-vertical">
-                <div class="form-group">
-                    <label class="control-label col-4"><span class="text-danger">*</span> 서비스</label>
-                    <div class="col-8 half">
-                        <select class="form-control">
-                            <option>파밍온</option>
-                            <option>파밍온2</option>
-                            <option>파밍온2</option>
-                        </select>
-                        <select class="form-control">
-                            <option>보급형</option>
-                            <option>기본형</option>
-                            <option>고급형</option>
-                        </select>
-                    </div>
-                </div>
+<!--                <div class="form-group">-->
+<!--                    <label class="control-label col-4"><span class="text-danger">*</span> 서비스</label>-->
+<!--                    <div class="col-8 half">-->
+<!--                        <select class="form-control">-->
+<!--                            <option>파밍온</option>-->
+<!--                            <option>파밍온2</option>-->
+<!--                            <option>파밍온2</option>-->
+<!--                        </select>-->
+<!--                        <select class="form-control">-->
+<!--                            <option>보급형</option>-->
+<!--                            <option>기본형</option>-->
+<!--                            <option>고급형</option>-->
+<!--                        </select>-->
+<!--                    </div>-->
+<!--                </div>-->
                 <div class="form-group">
                     <label class="control-label col-4"><span class="text-danger">*</span> 단말번호(전화번호)</label>
                     <div class="col-8 overCheck">

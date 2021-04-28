@@ -32,7 +32,7 @@
             <li class="on"><a href="rmfarm_ordering.html"><i class="fa fa-keyboard"></i> 명령어보내기</a></li>
         </ul>
     </div>
-    <div class="container on rmfarm">
+    <div class="container on order side-page">
         <div class="container-header">
             <div class="nav-folding">
                 <a href="#"><i class="fa fa-bars"></i></a>
@@ -42,12 +42,15 @@
                     <li><a href="notice.html"><i class="fa fa-bullhorn"></i> 공지사항</a></li>
                     <li><a href="mypage.html"><i class="fa fa-key"></i> 마이페이지</a></li>
                 </ul>
-                <div class="userInfo"><strong>고흥 류춘삼님</strong><a href="#">로그아웃 <i class="fa fa-sign-out-alt"></i></a></div>
+                <div class="userInfo"><a href="mypage.html" class="user">고흥 류춘삼님</a><a href="#">로그아웃 <i class="fa fa-sign-out-alt"></i></a></div>
             </div>
         </div>
-        <div class="container-body order">
-            <h2 class="wide"><span class="badge rmfarm">알엠팜</span> <label>명령어보내기</label></h2>
-            <h2><a href="rmfarm_user.html" class="mobile go-back"><i class="fa fa-chevron-left"></i></a> 명령어보내기</h2>
+        <div class="container-body">
+            <h2 class="wide"><span class="badge rmfarm">알엠팜</span> 명령어 보내기</h2>
+            <div class="app-header mobile">
+                <a href="javascript:history.back()" class="back"><i class="fa fa-chevron-left"></i></a>
+                <label>명령어 보내기</label>
+            </div>
             <div class="card">
                 <section>
                     <h3>명령정보 조회 주기</h3>
@@ -73,7 +76,32 @@
             <div class="card">
                 <section>
                     <h3>명령정보</h3>
-                    <div class="d-flex">
+                    <div class="d-flex flex-wrap">
+                        <div class="col-11 d-flex">
+                            <div class="form-group col-4">
+                                <label class="col-4 control-label">농장 선택</label>
+                                <div class="col-8">
+                                    <select class="form-control">
+                                        <option>전체</option>
+                                        <option>고흥 A</option>
+                                        <option>고흥 B</option>
+                                        <option>고흥 C</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group col-4">
+                                <label class="col-4 control-label">디바이스 선택</label>
+                                <div class="col-8">
+                                    <select class="form-control">
+                                        <option>전체</option>
+                                        <option>토마토1</option>
+                                        <option>토마토2</option>
+                                        <option>토마토3</option>
+                                        <option>토마토4</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-11 d-flex">
                             <div class="form-group col-4">
                                 <label class="col-4 control-label">디바이스 리셋</label>
