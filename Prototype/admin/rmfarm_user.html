@@ -105,9 +105,60 @@
                     </div>
                     <div class="col-3">
                         <div class="form-group">
-                            <label class="control-label col-4">작물선택</label>
+                            <label class="control-label col-4">온실종류</label>
                             <div class="col-8">
-                                <input type="text" class="form-control">
+                                <select class="form-control">
+                                    <option>유리온실</option>
+                                    <option>일반온실</option>
+                                    <option>비가림막온실</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="control-label col-4">배지종류</label>
+                            <div class="col-8">
+                                <select class="form-control">
+                                    <option>암면</option>
+                                    <option>코코</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="control-label col-4">배드구조</label>
+                            <div class="col-8">
+                                <select class="form-control">
+                                    <option>거터</option>
+                                    <option>스티로폼</option>
+                                    <option>자로또는V자</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="control-label col-4">작물종류</label>
+                            <div class="col-8">
+                                <select class="form-control">
+                                    <option>토마토</option>
+                                    <option>파프리카</option>
+                                    <option>딸기</option>
+                                    <option>직접입력</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="control-label col-4">작기</label>
+                            <div class="col-8">
+                                <select class="form-control">
+                                    <option>여름</option>
+                                    <option>겨울</option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -2095,17 +2146,58 @@
                     </div>
                 </div>
                 <div class="form-group col-6">
-                    <label class="control-label col-4">작물이름</label>
+                    <label class="control-label col-4">광량옵셋</label>
+                    <div class="col-8">
+                        <input type="text" class="form-control" value="0">
+                    </div>
+                </div>
+                <div class="form-group col-6">
+                    <label class="control-label col-4">온실종류</label>
                     <div class="col-8">
                         <select class="form-control">
-                            <option>없음</option>
+                            <option>유리온실</option>
+                            <option>일반온실</option>
+                            <option>비가림막온실</option>
                         </select>
                     </div>
                 </div>
                 <div class="form-group col-6">
-                    <label class="control-label col-4">광량옵셋</label>
+                    <label class="control-label col-4">배지종류</label>
                     <div class="col-8">
-                        <input type="text" class="form-control" value="0">
+                        <select class="form-control">
+                            <option>암면</option>
+                            <option>코코</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group col-6">
+                    <label class="control-label col-4">배드구조</label>
+                    <div class="col-8">
+                        <select class="form-control">
+                            <option>거터</option>
+                            <option>스티로폼</option>
+                            <option>자로또는V자</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group col-6">
+                    <label class="control-label col-4">작물종류</label>
+                    <div class="col-8">
+                        <select class="form-control">
+                            <option>토마토</option>
+                            <option>파프리카</option>
+                            <option>딸기</option>
+                            <option>직접입력</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group col-6">
+                    <label class="control-label col-4">작기</label>
+                    <div class="col-8">
+                        <select class="form-control">
+                            <option>여름</option>
+                            <option>겨울</option>
+                        </select>
                     </div>
                 </div>
             </div>
